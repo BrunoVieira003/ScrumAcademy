@@ -12,3 +12,4 @@ Scrum Academy é um projeto que visa criar uma ferramenta de estudo voltada para
 * [João Paulo Braga](https://github.com/jpbragac) - Development Team (DT)
 * [Mateus Madeira](https://github.com/mafemad) - Development Team (DT)
 * [Ramon Vinicius](https://github.com/RamonVSL) - Development Team (DT)
+* [Lucas Braga](https://github.com/lucasteixeirabraga) - Development Team (DT)
