@@ -2,7 +2,9 @@
 > Aplicação Web de aprendizado do método Scrum
 
 ## Introdução
-Scrum Academy é um projeto que visa criar uma ferramenta de estudo voltada para a metodologia ágil chamada Scrum. 
+Scrum Academy é um projeto que busca disseminar o método Scrum de maneira fácil e acessível. No Scrum Academy, buscamos reunir todo o conteúdo de Scrum num só lugar e apresentar ao estudante interessado suas ferramentas, métodos, características e aplicações.
+
+Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia aprenda desde as ferramentas básicas até dicas de como aprimorar suas habilidades pessoais no dia a dia do trabalho.
 
 ## Scrum Team
 * [Abner Machado](https://github.com/abner-machado) - Product Owner (PO)
