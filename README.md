@@ -6,12 +6,26 @@ Scrum Academy é um projeto que busca disseminar o método Scrum de maneira fác
 
 Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia aprenda desde as ferramentas básicas até dicas de como aprimorar suas habilidades pessoais no dia a dia do trabalho.
 
+## Tecnologias Utilizadas
+### Prototipação
+* Figma
+### Frontend
+* HTML5
+* CSS
+* Bootstrap
+### Backend
+* Python
+* Flask
+
 ## Scrum Team
-* [Abner Machado](https://github.com/abner-machado) - Product Owner (PO)
-* [Bruno Vieira](https://github.com/BrunoVieira30)  - Scrum Master (SM)
-* [Arthur Souza](https://github.com/Meowo2) - Development Team (DT)
-* [Enzo Pereira](https://github.com/Enzopereira01) - Development Team (DT)
-* [João Paulo Braga](https://github.com/jpbragac) - Development Team (DT)
-* [Mateus Madeira](https://github.com/mafemad) - Development Team (DT)
-* [Ramon Vinicius](https://github.com/RamonVSL) - Development Team (DT)
-* [Lucas Braga](https://github.com/lucasteixeirabraga) - Development Team (DT)
+### Product Owner (PO)
+* Abner Machado - [Github](https://github.com/abner-machado)
+### Scrum Master (SM)
+* Bruno Vieira - [Github](https://github.com/BrunoVieira30)
+### Development Team
+* Arthur Souza - [Github](https://github.com/Meowo2)
+* Enzo Pereira - [Github](https://github.com/Enzopereira01)
+* João Paulo Braga - [Github](https://github.com/jpbragac)
+* Mateus Madeira - [Github](https://github.com/mafemad)
+* Ramon Vinicius - [Github](https://github.com/RamonVSL)
+* Lucas Braga - [Github](https://github.com/lucasteixeirabraga)
