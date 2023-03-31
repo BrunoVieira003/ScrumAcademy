@@ -53,9 +53,9 @@ Status do Projeto: Em andamento <br>
 
 ## Scrum Team
 ### Product Owner (PO)
-* Abner Machado - [Github](https://github.com/abner-machado)
+* Abner Machado - [Github](https://github.com/abner-machado) - [LinkedIn](https://www.linkedin.com/in/abner-douglas-a70a9b199/)
 ### Scrum Master (SM)
-* Bruno Vieira - [Github](https://github.com/BrunoVieira30)
+* Bruno Vieira - [Github](https://github.com/BrunoVieira30) 
 ### Development Team
 * Arthur Souza - [Github](https://github.com/Meowo2)
 * Enzo Pereira - [Github](https://github.com/Enzopereira01)
