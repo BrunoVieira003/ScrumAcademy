@@ -1,6 +1,9 @@
 # Scrum Academy
 > Aplicação Web de aprendizado do método Scrum
 
+## Protótipo Navegável
+<a href='https://www.figma.com/proto/ewL2jXtv7lNXuCTD0vVmnC/Scrum-Academy?node-id=284-145&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=60%3A122' > Layout no Figma
+
 ## Introdução
 Scrum Academy é um projeto que busca disseminar o método Scrum de maneira fácil e acessível. No Scrum Academy, buscamos reunir todo o conteúdo de Scrum num só lugar e apresentar ao estudante interessado suas ferramentas, métodos, características e aplicações.
 
@@ -31,10 +34,11 @@ Status do Projeto: Em andamento <br>
 ## Metodologia Usada
 <img src='metodologia.png' >
 
+## Product Backlog
+<img src='backlog.png' >
 
-
-
-
+## Sprint Backlog
+<img src='sprintbacklog.png' >
 
 
 ## Scrum Team
