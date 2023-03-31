@@ -13,16 +13,23 @@ Scrum Academy é um projeto que busca disseminar o método Scrum de maneira fác
 Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia aprenda desde as ferramentas básicas até dicas de como aprimorar suas habilidades pessoais no dia a dia do trabalho.
 
 ## Projeto
-<img src='objetivo.png' >
+<img src="/API imagens/objetivo.png">
 
 Status do Projeto: Em andamento <br>
 
 ## Tecnologias Utilizadas
 
-<img src='tecnologias.png' >
+<img src="/API imagens/tecnologias.png">
 
 ### Prototipação
 * Figma
+### Organização de Tarefas
+* Microsoft Teams
+* Trello
+### Design 
+* Canva
+### Documentação
+* GitHub
 
 ## Cronograma das Sprints
 - KICK OFF: 13/02 a 03/03
@@ -32,16 +39,16 @@ Status do Projeto: Em andamento <br>
 - SPRINT 4: 15/05 a 04/06
 - FEIRA DE SOLUÇÕES: 13/06 e 14/06
 
-<img src='cronograma.png' >
+<img src="/API imagens/cronograma.png">
 
 ## Metodologia Usada
-<img src='metodologia.png' >
+<img src="/API imagens/metodologia.png">
 
 ## Product Backlog
-<img src='backlog.png' >
+<img src="/API imagens/backlog.png">
 
 ## Sprint Backlog
-<img src='sprintbacklog.png' >
+<img src="/API imagens/sprintbacklog.png">
 
 
 ## Scrum Team
