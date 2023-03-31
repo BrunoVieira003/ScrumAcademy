@@ -1,6 +1,9 @@
 # Scrum Academy
 > Aplicação Web de aprendizado do método Scrum
 
+![badge](https://img.shields.io/github/license/ColossusAPI/ScrumAcademy)
+![badge](https://img.shields.io/github/last-commit/ColossusAPI/ScrumAcademy)
+
 ## Protótipo Navegável
 <a href='https://www.figma.com/proto/ewL2jXtv7lNXuCTD0vVmnC/Scrum-Academy?node-id=284-145&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=60%3A122' > Layout no Figma
 
