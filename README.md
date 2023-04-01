@@ -50,6 +50,10 @@ Status do Projeto: Em andamento <br>
 ## Sprint Backlog
 <img src="/API imagens/sprintbacklog.png">
 
+## Protótipo do Site
+- Execução de uma navegação pelo Framework Figma
+<img src="/API imagens/prototipo.gif">
+<a href="/API imagens/sitemap.png"> SiteMap
 
 ## Scrum Team
 ### Product Owner (PO)
