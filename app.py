@@ -10,4 +10,8 @@ def index():
 def sprint():
     return render_template('sprint.html')
 
+@app.route('/importancia')
+def imp():
+    return render_template('importancia.html')
+
 app.run(debug=True)
