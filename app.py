@@ -18,4 +18,8 @@ def po():
 def imp():
     return render_template('importancia.html')
 
+@app.route('/productbacklog')
+def pbacklog():
+    return render_template('productbacklog.html')
+
 app.run(debug=True)
