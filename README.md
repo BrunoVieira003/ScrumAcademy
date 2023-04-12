@@ -61,7 +61,7 @@ Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia
 * Bruno Vieira - [Github](https://github.com/BrunoVieira30) - [Linkedin](https://www.linkedin.com/in/bruno-vieira-b999a2224/)
 ### Development Team
 * Arthur Souza - [Github](https://github.com/Meowo2) - [Linkedin](https://www.linkedin.com/in/arthur-sousa-3287391b1)
-* Enzo Pereira - [Github](https://github.com/Enzopereira01)
+* Enzo Pereira - [Github](https://github.com/Enzopereira01) - [Linkedin](https://www.linkedin.com/in/enzo-pereira-13331b272/)
 * João Paulo Braga - [Github](https://github.com/jpbragac) - [Linkedin](http://www.linkedin.com/in/jo%C3%A3o-paulo-correia-206a38270)
 * Mateus Madeira - [Github](https://github.com/mafemad) - [Linkedin](https://www.linkedin.com/in/mateus-ferreira-madeira-b66a27270)
 * Lucas Braga - [Github](https://github.com/lucasteixeirabraga) - [Linkedin](https://www.linkedin.com/in/lucas-braga-teixeira-64b37b216)
