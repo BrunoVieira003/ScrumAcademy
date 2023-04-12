@@ -65,5 +65,4 @@ Status do Projeto: Em andamento <br>
 * Enzo Pereira - [Github](https://github.com/Enzopereira01)
 * João Paulo Braga - [Github](https://github.com/jpbragac) - [Linkedin](http://www.linkedin.com/in/jo%C3%A3o-paulo-correia-206a38270)
 * Mateus Madeira - [Github](https://github.com/mafemad) - [Linkedin](https://www.linkedin.com/in/mateus-ferreira-madeira-b66a27270)
-* Ramon Vinicius - [Github](https://github.com/RamonVSL)
 * Lucas Braga - [Github](https://github.com/lucasteixeirabraga) - [Linkedin](https://www.linkedin.com/in/lucas-braga-teixeira-64b37b216)
