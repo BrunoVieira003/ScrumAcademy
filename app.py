@@ -14,4 +14,8 @@ def sprint():
 def po():
     return render_template('po.html')
 
+@app.route('/importancia')
+def imp():
+    return render_template('importancia.html')
+
 app.run(debug=True)
