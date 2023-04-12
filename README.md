@@ -3,6 +3,7 @@
 
 ![badge](https://img.shields.io/github/license/ColossusAPI/ScrumAcademy)
 ![badge](https://img.shields.io/github/last-commit/ColossusAPI/ScrumAcademy)
+![badge](https://img.shields.io/badge/status-em%20desenvolvimento-green)
 
 ## Protótipo Navegável
 <a href='https://www.figma.com/proto/ewL2jXtv7lNXuCTD0vVmnC/Scrum-Academy?node-id=284-145&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=60%3A122' > Layout no Figma
@@ -14,8 +15,6 @@ Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia
 
 ## Projeto
 <img src="/API imagens/objetivo.png">
-
-Status do Projeto: Em andamento <br>
 
 ## Tecnologias Utilizadas
 
