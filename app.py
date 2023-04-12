@@ -10,4 +10,8 @@ def index():
 def sprint():
     return render_template('sprint.html')
 
+@app.route('/po')
+def po():
+    return render_template('po.html')
+
 app.run(debug=True)
