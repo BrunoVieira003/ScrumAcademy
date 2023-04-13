@@ -26,4 +26,8 @@ def pbacklog():
 def sm():
     return render_template('sm.html')
 
+@app.route('/equipe')
+def equipe():
+    return render_template('equipe.html')
+
 app.run(debug=True)
