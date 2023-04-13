@@ -22,4 +22,8 @@ def imp():
 def pbacklog():
     return render_template('productbacklog.html')
 
+@app.route('/sm')
+def sm():
+    return render_template('sm.html')
+
 app.run(debug=True)
