@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('base.html')
+    return render_template('home.html')
 
 @app.route('/sprint')
 def sprint():
@@ -29,9 +29,5 @@ def sm():
 @app.route('/equipe')
 def equipe():
     return render_template('equipe.html')
-
-@app.route('/home')
-def home():
-    return render_template('home.html')
 
 app.run(debug=True)
