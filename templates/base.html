@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Scrum Academy</title>
-</head>
+
+    <link rel="stylesheet" href="{{ url_for('static',  filename='css/normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',  filename='css/styles.css') }}">
+    
+    <title>Scrum Academy</title>    
+    
+    <header>
+        <div class="flex-container">
+            <h1>Scrum Academy</h1>
+        </div>
+    </header>
+    
 <body>
-    <header><h1>Scrum Academy</h1></header>
-    <hr>
+      
     {% block content %}
     {% endblock %}
-    <hr>
-    <button> Próximo </button>
-    <footer><h3>Todos os direitos reservados</h3></footer>
+    
+    <div class="button">
+        <button> Próximo </button>
+    </div>
+    
+    <footer>
+        <h3>Todos os direitos reservados</h3>
+    </footer>
+
 </body>
 </html>
