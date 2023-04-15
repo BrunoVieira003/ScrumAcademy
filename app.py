@@ -34,4 +34,8 @@ def sm():
 def equipe():
     return render_template('equipe.html')
 
+@app.route('/dor-dod')
+def dor_dod():
+    return render_template('dor-dod.html')
+
 app.run(debug=True)
