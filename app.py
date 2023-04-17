@@ -38,4 +38,7 @@ def equipe():
 def dor_dod():
     return render_template('dor-dod.html')
 
+@app.route('/SprintBacklog')
+def sprintbacklog():
+    return render_template('SprintBacklog.html')
 app.run(debug=True)
