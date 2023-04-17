@@ -1,4 +1,4 @@
-.flex-container {
+header {
     margin: 0px;
     padding: 10px;
     height: auto;
@@ -8,22 +8,64 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: aliceblue;
     background: rgb(2,0,36);
-    background:  radial-gradient(circle, rgba(12,29,120,1) 0%, rgba(0,0,0,1) 100%);
+    background:  linear-gradient(#1E324C, #374C67);
 }
 
-div{
-    margin-left: 100px;
-    margin-right: 100px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+header > h1{
+    background-color: transparent;
+    font-size: 3rem;
 }
-h2 {
-    margin-left: 100px;
-    margin-right: 100px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+body{
+    background-image: linear-gradient(#8EA4A5, #5C9EA1);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 5vh auto;
+    width: 80%;
+    font-family: roboto, sans-serif;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+}
+
+h1, h2, h3{
+    font-family: roboto, sans-serif;
+    margin-bottom: 3vh;
+}
+
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    background-color: #d9d9d94d;
+    width: fit-content;
+    padding: 20px 40px;
+    margin: 3vh auto;
+    border-radius: 3px;
+}
+
+h2{
+    font-size: 1.7rem;
+}
+
+hr{
+    border: none;
+    border-bottom: #1c45475d solid 5px;
 }
 
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    background-image: linear-gradient(#1E324C, #374C67);
+    padding: 0.5vh;
+    color: white;
 }
 
 .button {
