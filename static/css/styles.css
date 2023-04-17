@@ -30,7 +30,7 @@ main{
 
 img{
     display: block;
-    margin: 0 auto;
+    margin: 6vh auto 1vh;
 }
 
 h1, h2, h3{
@@ -45,7 +45,7 @@ h1{
     background-color: #d9d9d94d;
     width: fit-content;
     padding: 20px 40px;
-    margin: 3vh auto;
+    margin: 2vh auto;
     border-radius: 3px;
 }
 
