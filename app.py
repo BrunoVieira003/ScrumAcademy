@@ -46,4 +46,9 @@ def sprintbacklog():
 def PI():
     return render_template('productincrement.html')
 
+@app.route('/planningpoker')
+def PP():
+    return render_template('planningpoker.html')
+
 app.run(debug=True)
+
