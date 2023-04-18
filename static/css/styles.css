@@ -106,6 +106,10 @@ hr{
     border-bottom: #1c45475d solid 5px;
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+}
 
 
 .button {
@@ -252,4 +256,28 @@ hr{
 
 .light-card{
     background-color: #d9d9d936;
+}
+
+.myButton {
+	box-shadow: 1px 1px 2px 2px #9fb4f2;
+	background-color:#1E324C;
+	border-radius:30px;
+	border:2px solid #233771;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:roboto, sans-serif;
+	font-size:22px;
+	font-weight:bold;
+	padding:16px 50px;
+	text-decoration:none;
+	text-shadow:2px 2px 2px #283966;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #2f517b 5%, #263757 100%);
+	background-color:#476e9e;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
