@@ -1,41 +1,110 @@
+
+/* Cabeçario */
+
 header {
+    display: flex;
     margin: 0px;
-    padding: 10px;
-    height: auto;
-    font-size: 20px;
-    text-align: center;
-    font-weight: bolder;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: aliceblue;
-    background: rgb(2,0,36);
-    background:  linear-gradient(#1E324C, #374C67);
+    padding: 0px;
+    height: 100px;
+    background: linear-gradient(180deg, #1E324C 0%, #374C67 100%);
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    justify-content: center;
 }
 
-header > h1{
+header > div > h1{
     background-color: transparent;
     font-size: 3rem;
+    font-family: 'Tomorrow';
+    font-style: normal;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
 }
 
-body{
-    background-image: linear-gradient(#8EA4A5, #5C9EA1);
+header > div{
+    background-color: transparent;   
 }
+
+/* Fim cabeçario */
+
+
+/* Rodapé */
+
+footer {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    height: 70px;
+    background: linear-gradient(180deg, #1E324C 0%, #374C67 100%);
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    align-content: center;
+    justify-content: center;
+}
+
+footer > div > h3{
+    background-color: transparent;
+    font-size: 1.3rem;
+    font-family: 'Tienne';
+    font-style: normal;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+
+footer > div{
+    background-color: transparent; 
+}
+
+/* Fim Rodapé */
+
+
+body{
+    background: linear-gradient(180deg, #5C9EA2 0%, #8EA4A5 100%);
+}
+
+/* Fontes das paginas (h1, h3, p, ul) */
 
 main{
     display: flex;
     flex-direction: column;
     margin: 1vh auto;
     width: 80%;
-    font-family: roboto, sans-serif;
 }
+
+main > h1{
+    font-size: 3rem;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 600;
+}
+
+main > div > h3{
+    font-size: 2rem;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 600;
+}
+
+main > div > p{
+    font-size: 1.2rem;
+    font-family: 'Roboto';
+    font-style: normal;
+
+}
+
+main > div > ul{
+    font-size: 1.2rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Fim fontes */
 
 img{
     display: block;
     margin: 6vh auto 1vh;
-}
-
-h1, h2, h3{
-    font-family: roboto, sans-serif;
-    margin-bottom: 3vh;
 }
 
 
@@ -58,15 +127,7 @@ hr{
     border-bottom: #1c45475d solid 5px;
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-image: linear-gradient(#1E324C, #374C67);
-    padding: 0.5vh;
-    color: white;
-}
+
 
 .button {
     text-align: center;
