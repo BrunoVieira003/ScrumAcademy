@@ -76,6 +76,7 @@ main > div > ul{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
+    text-align: justify;
 }
 
 /* Fim fontes */
@@ -83,7 +84,7 @@ main > div > ul{
 img{
     display: block;
     margin: 6vh auto 1vh;
-    width: 80%;
+    width: 40%;
 }
 
 h1, h2, h3{
@@ -119,7 +120,7 @@ hr{
 
 .quemsomos {
     width: auto;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     flex-wrap: nowrap;
     flex-direction:row;
@@ -135,9 +136,6 @@ hr{
     margin: 5vh 0;
 }
 
-.quemsomos:nth-child(even){
-    background-color: #d9d9d9a2;
-}
 
 .quemsomos > .text{
     width: 50%;
@@ -156,9 +154,12 @@ hr{
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+    
+    
   }
   .sidepanel::-webkit-scrollbar{
     display: none;
+   
    
   }
   /* The sidepanel links */
@@ -171,6 +172,8 @@ hr{
     transition: 0.3s;
     margin-bottom: 5px;
     margin-top: 5px;
+   
+   
   }
   
   /* When you mouse over the navigation links, change their color */
@@ -186,6 +189,7 @@ hr{
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    
   }
   
   /* Style the button that is used to open the sidepanel */
@@ -196,6 +200,7 @@ hr{
     color: white;
     padding: 30px 35px;
     border: none;
+    
   }
   
   .openbtn:hover {
@@ -213,6 +218,7 @@ hr{
     padding: 10px;
     margin: 10px 1vw;
     border-radius: 8px;
+    
 }
 
 .dark-card  > h3,
