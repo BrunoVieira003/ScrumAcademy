@@ -11,9 +11,7 @@
     <title>Scrum Academy</title>    
     
     <header>
-        <div style="flex-grow: 3;">
-            <h1>Scrum Academy</h1>
-        </div>
+        <h1>Scrum Academy</h1>
 
         <div>
             <!-- <<<<<<< Updated upstream -->
@@ -34,7 +32,7 @@
                 <a href="/dor-dod">DoR e DoD</a>
                 <a href="/burndown">Burndown</a>
                 <a href="/planningpoker"> Planning Poker</a>
-                <a href="">PACER</a>
+                <a href="/pacer">PACER</a>
                 <a href="/skills"> Soft e Hard Skills</a>
                 <a href="/quemsomos">Quem Somos</a>
             </div>
@@ -55,13 +53,13 @@
     <main>
         {% block content %}
         {% endblock %}
+        <a href='{{(href)}}' class="myButton">Próximo</a>
     </main>
     
     <footer>
         
             
         <div>
-            <a href='{{(href)}}' class="myButton">Próximo</a>
             <h3>Todos os direitos reservados</h3>
         </div>
 

@@ -4,24 +4,26 @@
 header {
     margin: 0px;
     padding: 0px;
-    height: 100px;
+    height: 10vh;
     background: linear-gradient(180deg, #1E324C 0%, #374C67 100%);
     box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
     align-items: center;
     justify-content: space-between;
 }
 
-header > div > h1{
+header > h1{
     background-color: transparent;
     font-size: 3rem;
-    font-family: 'Tomorrow';
     font-style: normal;
     text-align: center;
     font-weight: bolder;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: aliceblue;
-    background: rgb(2,0,36);
-    background:  linear-gradient(#1E324C, #374C67);
+    margin: 0 auto;
+}
+
+footer{
+    background: linear-gradient(180deg, #1E324C 0%, #374C67 100%);
 }
 
 footer > div{
@@ -51,23 +53,23 @@ main > h1{
     font-weight: 600;
 }
 
-main > div > h3{
+main h3{
     font-size: 2rem;
     font-family: 'Arial';
     font-style: normal;
     font-weight: 600;
 }
 
-main > div > p{
+main p{
     font-size: 1.2rem;
-    font-family: 'Roboto';
+    font-family: 'Roboto' ,sans-serif;
     font-style: normal;
 
 }
 
 main > div > ul{
     font-size: 1.2rem;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
 }
@@ -130,32 +132,18 @@ footer{
     font-size: larger;
 }
 
-.qs2{
-    margin-top: 2em;
-    text-align: justify;
-    text-indent: 1em;
-    font-size: larger;
-    width: auto;
-    height: 400px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction:row;
-    justify-content:space-between;
-    
-    
+.quemsomos:nth-child(odd){
+    margin: 5vh 0;
 }
-.qs3{
-    height: 400px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction:row;
-    align-items: center;
-    justify-content:space-between;
-    text-align: justify;
-    text-indent: 1em;
-    line-height: 2em;
-    font-size: larger;
+
+.quemsomos:nth-child(even){
+    background-color: #d9d9d9a2;
 }
+
+.quemsomos > .text{
+    width: 50%;
+}
+
 
 /* The sidepanel menu */
 .sidepanel {
@@ -215,14 +203,6 @@ footer{
     margin-bottom: 5vh;
   }
 
-.quemsomos:nth-child(even){
-    background-color: #d9d9d9a2;
-}
-
-.quemsomos > .text{
-    width: 50%;
-}
-
 .skills-cards{
     display: flex;
     flex-direction: row;
@@ -259,11 +239,11 @@ footer{
 }
 
 .myButton {
+    margin: 5vh auto;
 	box-shadow: 1px 1px 2px 2px #9fb4f2;
 	background-color:#1E324C;
 	border-radius:30px;
 	border:2px solid #233771;
-	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:roboto, sans-serif;
