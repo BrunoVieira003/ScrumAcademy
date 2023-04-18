@@ -124,7 +124,6 @@ hr{
     text-indent: 1em;
     line-height: 2em;
     font-size: larger;
-<<<<<<< HEAD
 }
 
 .qs2{
@@ -209,10 +208,8 @@ hr{
   
   .openbtn:hover {
     background-color: #444;
-  }
-=======
     margin-bottom: 5vh;
-}
+  }
 
 .quemsomos:nth-child(even){
     background-color: #d9d9d9a2;
