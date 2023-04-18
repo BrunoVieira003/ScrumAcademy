@@ -23,7 +23,10 @@ header > h1{
 }
 
 footer{
+    display: flex;
+    justify-content: center;
     background: linear-gradient(180deg, #1E324C 0%, #374C67 100%);
+    color: white;
 }
 
 footer > div{
@@ -106,11 +109,6 @@ h2{
 hr{
     border: none;
     border-bottom: #1c45475d solid 5px;
-}
-
-footer{
-    display: flex;
-    justify-content: center;
 }
 
 
@@ -203,14 +201,6 @@ footer{
     margin-bottom: 5vh;
   }
 
-.skills-cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10%;
-    flex-wrap: wrap;
-}
-
 .skills-cards > div[class$="card"]{
     width: 20%;
 }
@@ -220,7 +210,7 @@ footer{
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px 1vw;
     border-radius: 8px;
 }
 
@@ -236,6 +226,18 @@ footer{
 
 .light-card{
     background-color: #d9d9d936;
+}
+
+.cards-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.cards-group > div{
+    width: 30%;
 }
 
 .myButton {
