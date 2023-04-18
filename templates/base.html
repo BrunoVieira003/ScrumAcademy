@@ -11,41 +11,47 @@
     <title>Scrum Academy</title>    
     
     <header>
-        <div>
+        <div style="flex-grow: 3;">
             <h1>Scrum Academy</h1>
+        </div>
+
+        <div>
+            <!-- <<<<<<< Updated upstream -->
+
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="/">Home</a>
+                <a href="/introducao">Introdução</a>
+                <a href="/importancia">Importância</a>
+                <a href="/sprint"> Sprints</a>
+                <a href="/SprintBacklog"> Sprint Backlog</a>
+                <a href="/mvp">MVP</a>
+                <a href="productincrement"> Product Increment</a>
+                <a href="/po"> Product Owner</a>
+                <a href="/sm"> Scrum Master</a>
+                <a href="/equipe"> Equipe de Desenvolvimento</a>
+                <a href="/productbacklog"> Product Backlog</a>
+                <a href="/dor-dod">DoR e DoD</a>
+                <a href="/burndown">Burndown</a>
+                <a href="/planningpoker"> Planning Poker</a>
+                <a href="">PACER</a>
+                <a href="/skills"> Soft e Hard Skills</a>
+                <a href="/quemsomos">Quem Somos</a>
+            </div>
+              
+              <button class="openbtn" onclick="openNav()">&#9776; </button>
+              <script type="text/javascript" src="../static/script.js"></script>
+        
+            <!-- ======= -->
+            
+            <!-- >>>>>>> Stashed changes -->
         </div>
     </header>
     
 <body>
-<<<<<<< Updated upstream
 
-    <div id="mySidepanel" class="sidepanel">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="/">Home</a>
-        <a href="/introducao">Introdução</a>
-        <a href="/importancia">Importância</a>
-        <a href="/sprint"> Sprints</a>
-        <a href="/SprintBacklog"> Sprint Backlog</a>
-        <a href="/mvp">MVP</a>
-        <a href="productincrement"> Product Increment</a>
-        <a href="/po"> Product Owner</a>
-        <a href="/sm"> Scrum Master</a>
-        <a href="/equipe"> Equipe de Desenvolvimento</a>
-        <a href="/productbacklog"> Product Backlog</a>
-        <a href="/dor-dod">DoR e DoD</a>
-        <a href="/burndown">Burndown</a>
-        <a href="/planningpoker"> Planning Poker</a>
-        <a href="">PACER</a>
-        <a href="/skills"> Soft e Hard Skills</a>
-        <a href="/quemsomos">Quem Somos</a>
-      </div>
-      
-      <button class="openbtn" onclick="openNav()">&#9776; </button>
-      <script type="text/javascript" src="../static/script.js"></script>
 
-=======
     
->>>>>>> Stashed changes
     <main>
         {% block content %}
         {% endblock %}
