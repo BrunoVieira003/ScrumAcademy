@@ -1,8 +1,21 @@
+
+/* Cabeçario */
+
 header {
     margin: 0px;
-    padding: 10px;
-    height: auto;
-    font-size: 20px;
+    padding: 0px;
+    height: 100px;
+    background: linear-gradient(180deg, #1E324C 0%, #374C67 100%);
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > div > h1{
+    background-color: transparent;
+    font-size: 3rem;
+    font-family: 'Tomorrow';
+    font-style: normal;
     text-align: center;
     font-weight: bolder;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -11,22 +24,55 @@ header {
     background:  linear-gradient(#1E324C, #374C67);
 }
 
-header > h1{
-    background-color: transparent;
-    font-size: 3rem;
+footer > div{
+    background-color: transparent; 
 }
 
+/* Fim Rodapé */
+
+
 body{
-    background-image: linear-gradient(#8EA4A5, #5C9EA1);
+    background: linear-gradient(180deg, #5C9EA2 0%, #8EA4A5 100%);
 }
+
+/* Fontes das paginas (h1, h3, p, ul) */
 
 main{
     display: flex;
     flex-direction: column;
     margin: 1vh auto;
     width: 80%;
-    font-family: roboto, sans-serif;
 }
+
+main > h1{
+    font-size: 3rem;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 600;
+}
+
+main > div > h3{
+    font-size: 2rem;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 600;
+}
+
+main > div > p{
+    font-size: 1.2rem;
+    font-family: 'Roboto';
+    font-style: normal;
+
+}
+
+main > div > ul{
+    font-size: 1.2rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Fim fontes */
 
 img{
     display: block;
@@ -60,15 +106,7 @@ hr{
     border-bottom: #1c45475d solid 5px;
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-image: linear-gradient(#1E324C, #374C67);
-    padding: 0.5vh;
-    color: white;
-}
+
 
 .button {
     text-align: center;
@@ -86,6 +124,93 @@ footer {
     text-indent: 1em;
     line-height: 2em;
     font-size: larger;
+<<<<<<< HEAD
+}
+
+.qs2{
+    margin-top: 2em;
+    text-align: justify;
+    text-indent: 1em;
+    font-size: larger;
+    width: auto;
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction:row;
+    justify-content:space-between;
+    
+    
+}
+.qs3{
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+    text-align: justify;
+    text-indent: 1em;
+    line-height: 2em;
+    font-size: larger;
+}
+
+/* The sidepanel menu */
+.sidepanel {
+    height: 100em; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background: linear-gradient(360deg, #1E324C 0%, #374C67 100%); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+  .sidepanel::-webkit-scrollbar{
+    display: none;
+   
+  }
+  /* The sidepanel links */
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style the button that is used to open the sidepanel */
+  .openbtn {
+    font-size: 34px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    padding: 30px 35px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+=======
     margin-bottom: 5vh;
 }
 
