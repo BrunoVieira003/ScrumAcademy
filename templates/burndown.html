@@ -1,0 +1,39 @@
+{% extends "base.html"%}
+{%block content%}
+
+<h1>Burndown</h1>
+
+<hr>
+
+<div>
+
+    <h3>O que é?</h3>
+
+    <p>     Burndown é uma ferramenta utilizada no Scrum para medir o desempenho de uma equipe durante o processo de desenvolvimento baseado na quantidade de horas de trabalho. Trata-se de uma lista de tarefas necessárias para a conclusão de uma sprint junto de um gráfico da linha do tempo da realização dessas tarefas. No gráfico exitem duas linhas: o desempenho “ideal” vs. o desempenjo real.</p>
+
+</div>
+<div>
+
+    <img src="../static/imagens/burndown_img/burndown1.png" alt="img1">
+
+    <ul>
+        <li>Ao final da sprint, ambas as linhas devem se encontrar no gráfico indicando que, mesmo com atrasos, o resultado foi entregue</li>
+        <li>Quando a linha vermelha está acima da linha azul, existe um atraso no processo</li>
+        <li>Quando a linha vermelha está abaixo da linha azul, o processo está adiantado</li>
+        </ul> 
+</div>
+
+<div>
+
+    <h3>Como utilizo?</h3>
+
+    <p>   Ao final da Sprint, o Scrum Master junto da equipe observa as tarefas e períodos que causaram atraso e pensa em soluções para evitar esses contratempos.</p>
+
+    <p>   A estimativa serve para guiar a eficiência do processo, ou seja, quanto mais próxima as linhas estão, melhor foi estimada a Sprint.</p>
+</div>
+<div>
+
+    <img src="../static/imagens/burndown_img/burndown2.png" alt="img2">
+
+</div>
+{% endblock %}
