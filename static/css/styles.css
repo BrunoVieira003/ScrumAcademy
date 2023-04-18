@@ -71,4 +71,44 @@ footer {
 .button {
     text-align: center;
 }
- 
+
+.qs1 {
+    width: auto;
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-around;
+    text-align: justify;
+    text-indent: 1em;
+    line-height: 2em;
+    font-size: larger;
+    
+}
+
+.qs2{
+    margin-top: 2em;
+    text-align: justify;
+    text-indent: 1em;
+    font-size: larger;
+    width: auto;
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction:row;
+    justify-content:space-between;
+    
+}
+.qs3{
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+    text-align: justify;
+    text-indent: 1em;
+    line-height: 2em;
+    font-size: larger;
+}
