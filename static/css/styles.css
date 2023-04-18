@@ -65,14 +65,14 @@ main h3{
 }
 
 main p{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-family: 'Roboto' ,sans-serif;
     font-style: normal;
 
 }
 
 main > div > ul{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
