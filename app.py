@@ -50,6 +50,10 @@ def PI():
 def PP():
     return render_template('planningpoker.html')
 
+@app.route('/pacer')
+def pacer():
+    return render_template('pacer.html')
+
 @app.route('/burndown')
 def burndown():
     return render_template('burndown.html')
@@ -62,9 +66,8 @@ def mvp():
 def skills():
     return render_template('shskills.html')
 
-app.route('/quemsomos')
+@app.route('/quemsomos')
 def quemsomos():
     return render_template('quemsomos.html')
 
 app.run(debug=True)
-
