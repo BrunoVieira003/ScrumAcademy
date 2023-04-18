@@ -62,7 +62,7 @@ def mvp():
 def skills():
     return render_template('shskills.html')
 
-app.route('/quemsomos')
+@app.route('/quemsomos')
 def quemsomos():
     return render_template('quemsomos.html')
 
