@@ -31,10 +31,12 @@ main{
 img{
     display: block;
     margin: 6vh auto 1vh;
+    width: 80%;
 }
 
 h1, h2, h3{
     font-family: roboto, sans-serif;
+    font-weight: bolder;
     margin-bottom: 3vh;
 }
 
@@ -93,4 +95,39 @@ footer {
 
 .quemsomos > .text{
     width: 50%;
+}
+
+.skills-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: wrap;
+}
+
+.skills-cards > div[class$="card"]{
+    width: 20%;
+}
+
+.dark-card, .light-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.dark-card  > h3,
+.light-card > h3{
+    margin: 1vh auto;
+}
+
+.dark-card{
+    background-color: #1e324cd5;
+    color: white;
+}
+
+.light-card{
+    background-color: #d9d9d936;
 }
