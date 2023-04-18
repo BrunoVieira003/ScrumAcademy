@@ -2,13 +2,14 @@
 /* Cabeçario */
 
 header {
+    display: flex;
     margin: 0px;
     padding: 0px;
     height: 10vh;
     background: linear-gradient(180deg, #1E324C 0%, #374C67 100%);
     box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 header > h1{
@@ -173,8 +174,9 @@ hr{
   }
   
   /* When you mouse over the navigation links, change their color */
-  .sidepanel a:hover {
+  .sidepanel a:hover:not(:first-child){
     color: #f1f1f1;
+    background-color: #d8d8d852;
   }
   
   /* Position and style the close button (top right corner) */
@@ -197,8 +199,7 @@ hr{
   }
   
   .openbtn:hover {
-    background-color: #444;
-    margin-bottom: 5vh;
+    background-color: #44444452;
   }
 
 .skills-cards > div[class$="card"]{
