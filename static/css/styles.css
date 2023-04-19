@@ -10,8 +10,6 @@ header {
     box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
     align-items: center;
     justify-content: space-evenly;
-    position: sticky;
-    top: 0;
 }
 
 header > h1{
@@ -146,7 +144,7 @@ hr{
 
 /* The sidepanel menu */
 .sidepanel {
-    height: 100%; /* Specify a height */
+    height: 100em; /* Specify a height */
     width: 0; /* 0 width - change this with JavaScript */
     position: absolute; /* Stay in place */
     z-index: 1; /* Stay on top */
@@ -156,19 +154,13 @@ hr{
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
-    overflow-y: visible;    
     
     
   }
   .sidepanel::-webkit-scrollbar{
-    width: 10px;
-    display: auto;
+    display: none;
    
    
-  }
-  .sidepanel::-webkit-scrollbar-thumb {
-    background-color: #88bef2;
-    
   }
   /* The sidepanel links */
   .sidepanel a {
@@ -278,4 +270,3 @@ hr{
 	position:relative;
 	top:1px;
 }
-
