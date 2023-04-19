@@ -12,6 +12,7 @@ header {
     justify-content: space-evenly;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 header > h1{
@@ -204,13 +205,14 @@ hr{
     cursor: pointer;
     background-color: transparent;
     color: white;
-    padding: 30px 35px;
+    height: 100%;
+    padding: 0 30px;
     border: none;
     
   }
   
   .openbtn:hover {
-    background-color: #44444452;
+    background-color: #d6d6d652;
   }
 
 .skills-cards > div[class$="card"]{
@@ -223,8 +225,7 @@ hr{
     align-items: center;
     padding: 10px;
     margin: 10px 1vw;
-    border-radius: 8px;
-    
+    border-radius: 8px; 
 }
 
 .dark-card  > h3,
@@ -267,10 +268,12 @@ hr{
 	padding:16px 50px;
 	text-decoration:none;
 	text-shadow:2px 2px 2px #283966;
+    transition: all .5s;
 }
 .myButton:hover {
 	background:linear-gradient(to bottom, #2f517b 5%, #263757 100%);
 	background-color:#476e9e;
+    transform: scale(1.05);
 }
 .myButton:active {
 	position:relative;
