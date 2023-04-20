@@ -36,7 +36,7 @@ Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia
 ### Gerenciamento de rotas
 * Microframework Flask
 
-## Cronograma das Sprints
+## 📅 Cronograma das Sprints
 - KICK OFF: 13/02 a 03/03 - Finalizado
 - SPRINT 1: 13/03 a 02/04 - Finalizado
 - SPRINT 2: 03/04 a 23/04 - Finalizado
@@ -61,11 +61,11 @@ Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia
 <a href="/API imagens/sitemap.png"> SiteMap
 
 ## Scrum Team
-### Product Owner (PO)
+### 🎁 Product Owner (PO)
 * Abner Machado - [Github](https://github.com/abner-machado) - [LinkedIn](https://www.linkedin.com/in/abner-douglas-a70a9b199/)
-### Scrum Master (SM)
+### 📈 Scrum Master (SM)
 * Bruno Vieira - [Github](https://github.com/BrunoVieira30) - [Linkedin](https://www.linkedin.com/in/bruno-vieira-b999a2224/)
-### Development Team
+### 💻 Development Team
 * Arthur Souza - [Github](https://github.com/Meowo2) - [Linkedin](https://www.linkedin.com/in/arthur-sousa-3287391b1)
 * Enzo Pereira - [Github](https://github.com/Enzopereira01) - [Linkedin](https://www.linkedin.com/in/enzo-pereira-13331b272/)
 * João Paulo Braga - [Github](https://github.com/jpbragac) - [Linkedin](http://www.linkedin.com/in/jo%C3%A3o-paulo-correia-206a38270)
