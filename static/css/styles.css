@@ -213,10 +213,6 @@ hr{
     background-color: #44444452;
   }
 
-  #main {
-    transition: margin-left .5s;
-  }
-
 .skills-cards > div[class$="card"]{
     width: 20%;
 }
