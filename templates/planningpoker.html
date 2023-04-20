@@ -1,28 +1,21 @@
 {% extends "base.html"%} 
 {%block content%}
 
-    <h1>
-        Planning Poker
-    </h1>
+    <h1>Planning Poker</h1>
 
 
 
-    <div>
-        <h3>
-            <strong>Introdução</strong>
-        </h3>
-        <p>
-              O planning poker por mais que não seja um dos principais artefatos do scrum, é uma das ferramentas mais importantes para designação de tempo para cada tarefa, sendo isso feito através da avaliação da dificuldade de cada tarefa e a expectativa de tempo gasto para tal.
+    <section>
+        <h2>O que é?</h2>
+        <div class="image-text">
+            <p>O planning poker por mais que não seja um dos principais artefatos do scrum, é uma das ferramentas mais importantes para designação de tempo para cada tarefa, sendo isso feito através da avaliação da dificuldade de cada tarefa e a expectativa de tempo gasto para tal.
+            </p>
+            <img src="../static/imagens/plann_poker/planningpoker1.png"alt="planningpoker">
+        </div>
 
-        </p>
-        <img src="../static/imagens/plann_poker/planningpoker1.png"alt="planningpoker">
-
-    </div>
-    <div>
-        <h3>
-           <strong>Utilização</strong> 
-
-        </h3>
+    </section>
+    <section>
+        <h2>Utilização</h2>
         <p>
             A ferramenta possibilita pontuar e classicar as tarefas com um sistema de números utilizando o conceito de escala Fibonacci por meio de um baralho. A estimativa é realizada de forma consensual entre os membros do time de desenvolvimento (desde Júnior até sênior).
         </p>
@@ -32,16 +25,10 @@
     Como a sequencia numérica acima, sendo o menor número como o mais facil e rapido de ser realizado e o ultimo sendo o mesmo mais demorado e/ou dificio de ser realizado.
 
 </p>
-<img src="../static/imagens/plann_poker/planningpoker2.png"alt="planningpoker">
 
-</div>
-<div>
-    <h3>
-        <strong>
-            Vantagens
-        </strong>
-
-    </h3>
+</section>
+<section>
+    <h3>Vantagens</h3>
     <ul>
         <li>
             Estimativas mais precisas e mais bem mensuradas;
@@ -63,12 +50,5 @@
         </li>
     </ul>
 
-</div>
-
-
-
-
-    <h3>
-        Próximo
-    </h3>
+</section>
     {% endblock %}
