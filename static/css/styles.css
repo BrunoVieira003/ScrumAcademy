@@ -30,6 +30,7 @@ footer{
     justify-content: center;
     background: linear-gradient(180deg, #1E324C 0%, #374C67 100%);
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 footer > div{
@@ -304,12 +305,14 @@ hr{
     background: none;
     color: #063663;
     margin: 0 auto;
+    border: none;
 }
 
 .landing > h2{
     margin: 0 auto;
     color: #084c8c;
     font-style: italic;
+    border-bottom: #1E324C 5px solid;
 }
 
 .landing-image p{
@@ -351,8 +354,4 @@ hr{
     width: auto;
     height: 20%;
     margin: 0 5%;
-}
-
-.image-text > ul,
-.image-text > p{
 }
