@@ -146,7 +146,7 @@ hr{
 
 /* The sidepanel menu */
 .sidepanel {
-    height: 100%; /* Specify a height */
+    height: 90%; /* Specify a height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
@@ -159,7 +159,7 @@ hr{
     
     
   }
-  .sidepanel::-webkit-scrollbar{
+ .sidepanel::-webkit-scrollbar{
     width: 10px
    
    
@@ -211,6 +211,10 @@ hr{
   
   .openbtn:hover {
     background-color: #44444452;
+  }
+
+  #main {
+    transition: margin-left .5s;
   }
 
 .skills-cards > div[class$="card"]{
