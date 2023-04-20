@@ -16,7 +16,7 @@ def imp():
 
 @app.route('/sprint')
 def sprint():
-    return render_template('sprint.html', href="/SprintBacklog")
+    return render_template('sprint.html', href="/sprintbacklog")
 
 @app.route('/sprintbacklog')
 def sprintbacklog():
