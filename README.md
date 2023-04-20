@@ -18,7 +18,7 @@ Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia
 
 ## Tecnologias Utilizadas
 
-<img src="/API imagens/tecnologias.png">
+<img src="/API imagens/tecnologias2.png">
 
 ### Prototipação
 * Figma
@@ -29,12 +29,18 @@ Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia
 * Canva
 ### Documentação
 * GitHub
+### Desenvolvimento de Código
+* HTML
+* CSS
+* JavaScript
+### Gerenciamento de rotas
+* Microframework Flask
 
 ## Cronograma das Sprints
-- KICK OFF: 13/02 a 03/03
-- SPRINT 1: 13/03 a 02/04
-- SPRINT 2: 03/04 a 23/04
-- SPRINT 3: 24/04 a 14/05
+- KICK OFF: 13/02 a 03/03 - Finalizado
+- SPRINT 1: 13/03 a 02/04 - Finalizado
+- SPRINT 2: 03/04 a 23/04 - Finalizado
+- SPRINT 3: 24/04 a 14/05 
 - SPRINT 4: 15/05 a 04/06
 - FEIRA DE SOLUÇÕES: 13/06 e 14/06
 
@@ -44,10 +50,10 @@ Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia
 <img src="/API imagens/metodologia.png">
 
 ## Product Backlog
-<img src="/API imagens/backlog.png">
+<img src="/API imagens/sprintbacklog.png">
 
 ## Sprint Backlog
-<img src="/API imagens/sprintbacklog.png">
+<img src="/API imagens/productbacklog.png">
 
 ## Protótipo do Site
 - Execução de uma navegação pelo Framework Figma
