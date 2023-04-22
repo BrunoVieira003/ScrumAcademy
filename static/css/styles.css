@@ -112,7 +112,7 @@ main a:hover{
 img{
     display: block;
     margin: 2vh auto 1vh;
-    width: 40%;
+    width: 50%;
 }
 
 hr{
@@ -351,7 +351,12 @@ hr{
 }
 
 .image-text > img{
-    width: auto;
+    width: 50%;
     height: 20%;
     margin: 0 5%;
+}
+.image-equipe > img {
+    width: 80%;
+    height: 80%;
+    margin: 0 10%;
 }
