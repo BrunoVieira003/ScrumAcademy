@@ -5,9 +5,6 @@
 ![badge](https://img.shields.io/github/last-commit/ColossusAPI/ScrumAcademy)
 ![badge](https://img.shields.io/badge/status-em%20desenvolvimento-green)
 
-## Protótipo Navegável
-<a href='https://www.figma.com/proto/ewL2jXtv7lNXuCTD0vVmnC/Scrum-Academy?node-id=284-145&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=60%3A122' > Layout no Figma
-
 ## Introdução
 Scrum Academy é um projeto que busca disseminar o método Scrum de maneira fácil e acessível. No Scrum Academy, buscamos reunir todo o conteúdo de Scrum num só lugar e apresentar ao estudante interessado suas ferramentas, métodos, características e aplicações.
 
@@ -54,11 +51,6 @@ Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia
 
 ## Sprint Backlog
 <img src="/API imagens/productbacklog.png">
-
-## Protótipo do Site
-- Execução de uma navegação pelo Framework Figma
-<img src="/API imagens/prototipo.gif">
-<a href="/API imagens/sitemap.png"> SiteMap
 
 ## Scrum Team
 ### 🎁 Product Owner (PO)
