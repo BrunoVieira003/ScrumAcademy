@@ -107,6 +107,10 @@ main a:hover{
     text-decoration: underline;
 }
 
+section{
+    margin-bottom: 3vh;
+}
+
 /* Fim fontes */
 
 img{
