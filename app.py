@@ -56,11 +56,7 @@ def burndown():
 
 @app.route('/planningpoker')
 def PP():
-    return render_template('planningpoker.html', href="/pacer")
-
-@app.route('/pacer')
-def pacer():
-    return render_template('pacer.html', href="/skills")
+    return render_template('planningpoker.html', href="/skills")
 
 @app.route('/skills')
 def skills():
