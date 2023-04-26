@@ -14,8 +14,14 @@
 <body>
 
     <header>
-        <button class="openbtn" onclick="openNav()">&#9776; </button>
-        <h1>Scrum Academy</h1>
+
+        <div>
+            <button class="openbtn" onclick="openNav()">&#9776; </button>
+        </div>
+
+        <div style="flex-grow: 4;">
+            <h1>Scrum Academy</h1>
+        </div>
 
         <div>
 
@@ -47,12 +53,14 @@
         {% block content %}
         {% endblock %}
     </main>
+
+    <br>
+    <br>
     
-    <footer>
-        
+    <footer> 
             
         <div>
-            <h3>Todos os direitos reservados</h3>
+            <!-- <h3>Todos os direitos reservados</h3> -->
         </div>
 
     </footer>
