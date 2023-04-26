@@ -320,7 +320,6 @@ hr{
     margin: 0 10%;
 }
 
-<<<<<<< Updated upstream
 .dod{
    
     font-size: 3.8rem;
@@ -328,7 +327,7 @@ hr{
     color: #063663;
     margin: 0 auto;
     border: none;   
-=======
+}
 
 .revisao{
     display: flex;
@@ -348,5 +347,4 @@ hr{
 .revisao p,
 .revisao ol{
     text-align: left;
->>>>>>> Stashed changes
 }
