@@ -41,7 +41,7 @@ footer > div{
 
 
 body{
-    background: linear-gradient(180deg, #5C9EA2 0%, #8EA4A5 100%);
+    background: #fefefe;
 }
 
 /* Fontes das paginas (h1, h3, p, ul) */
@@ -64,7 +64,7 @@ main h1{
     margin: 2vh auto;
     border-radius: 3px;
     color: white;
-    background-color: #d9d9d936;
+    background-color: #87bdc0;
     border-bottom: #1E324C 5px solid;
 }
 
@@ -255,7 +255,7 @@ hr{
 }
 
 .light-card{
-    background-color: #d9d9d936;
+    background-color: #9acdcf;
 }
 
 .cards-group{
@@ -272,7 +272,6 @@ hr{
 
 .myButton {
     margin: 5vh auto;
-	box-shadow: 1px 1px 2px 2px #9fb4f2;
 	background-color:#1E324C;
 	border-radius:10px;
 	border:2px solid #233771;
@@ -300,7 +299,6 @@ hr{
 .landing{
     display: flex;
     flex-direction: column;
-    color: white;
     margin: 5vh auto;
 }
 
@@ -320,7 +318,6 @@ hr{
 }
 
 .landing-image p{
-    color: white;
 }
 
 .landing-image h3{
