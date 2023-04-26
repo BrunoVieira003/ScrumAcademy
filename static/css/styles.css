@@ -303,3 +303,12 @@ hr{
     height: 80%;
     margin: 0 10%;
 }
+
+.dod{
+   
+    font-size: 3.8rem;
+    background: none;
+    color: #063663;
+    margin: 0 auto;
+    border: none;   
+}
