@@ -44,40 +44,15 @@ body{
     background: #fefefe;
 }
 
-/* Fontes das paginas (h1, h3, p, ul) */
-
-main{
-    display: flex;
-    flex-direction: column;
-    margin: 1vh auto;
-    width: 80%;
-}
-
-
 main h1{
-    font-size: 3rem;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    width: fit-content;
-    padding: 20px 40px;
-    margin: 2vh auto;
-    border-radius: 3px;
     color: white;
     background-color: #87bdc0;
     border-bottom: #1E324C 5px solid;
 }
 
-main h2{
-    font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
-}
-
-main h3{
-    font-size: 1.5rem;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 600;
+h2{
+    text-align: center;
+    margin: 3vh 0;
 }
 
 main p{
@@ -225,25 +200,6 @@ hr{
     background-color: #44444452;
   }
 
-.skills-cards > div[class$="card"]{
-    width: 20%;
-}
-
-.dark-card, .light-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 25px;
-    margin: 10px 1vw;
-    border-radius: 8px;
-    
-}
-
-.dark-card  > h3,
-.light-card > h3{
-    margin: 1vh auto;
-}
-
 .dark-card{
     background-color: #1e324cd5;
     color: white;
@@ -258,17 +214,6 @@ hr{
     background-color: #9acdcf;
 }
 
-.cards-group{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2vw;
-}
-
-.cards-group > div{
-    width: 30%;
-}
 
 .myButton {
     margin: 5vh auto;
