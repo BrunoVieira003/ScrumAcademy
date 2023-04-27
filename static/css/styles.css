@@ -333,22 +333,9 @@ hr{
     border: none;   
 }
 
-.revisao{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.revisao > div{
-    width: 30rem;
-    padding: 0.5rem;
-    min-height: 1rem;
-    margin: auto;
-}
-
-.revisao p,
-.revisao ol{
-    text-align: left;
+.revisao > h1{
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    color: black;
 }
