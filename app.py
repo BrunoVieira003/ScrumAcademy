@@ -4,66 +4,66 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('home.html', href="/introducao")
+    return render_template('home.html', prox="/introducao")
 
 @app.route('/introducao')
 def introducao():
-    return render_template('introducao.html', href="/importancia")
+    return render_template('introducao.html', prox="/importancia", ante="/")
 
 @app.route('/importancia')
 def imp():
-    return render_template('importancia.html', href="/sprint")
+    return render_template('importancia.html', prox="/sprint", ante="/introducao")
 
 @app.route('/sprint')
 def sprint():
-    return render_template('sprint.html', href="/sprintbacklog")
+    return render_template('sprint.html', prox="/sprintbacklog", ante="/importancia")
 
 @app.route('/sprintbacklog')
 def sprintbacklog():
-    return render_template('SprintBacklog.html', href="/mvp")
+    return render_template('SprintBacklog.html', prox="/mvp", ante="/sprint")
 
 @app.route('/mvp')
 def mvp():
-    return render_template('mvp.html', href="/productincrement")
+    return render_template('mvp.html', prox="/productincrement", ante="/sprintbacklog")
 
 @app.route('/productincrement')
 def PI():
-    return render_template('productincrement.html', href="/po")
+    return render_template('productincrement.html', prox="/po", ante="/mvp")
 
 @app.route('/po')
 def po():
-    return render_template('po.html', href="/sm")
+    return render_template('po.html', prox="/sm", ante="/productincrement")
 
 @app.route('/sm')
 def sm():
-    return render_template('sm.html', href="/equipe")
+    return render_template('sm.html', prox="/equipe", ante="/po")
 
 @app.route('/equipe')
 def equipe():
-    return render_template('equipe.html', href="/productbacklog")
+    return render_template('equipe.html', prox="/productbacklog", ante="/sm")
 
 @app.route('/productbacklog')
 def pbacklog():
-    return render_template('productbacklog.html', href="/dor-dod")
+    return render_template('productbacklog.html', prox="/dor-dod", ante="/equipe")
 
 @app.route('/dor-dod')
 def dor_dod():
-    return render_template('dor-dod.html', href="/burndown")
+    return render_template('dor-dod.html', prox="/burndown", ante="/productbacklog")
 
 @app.route('/burndown')
 def burndown():
-    return render_template('burndown.html', href="/planningpoker")
+    return render_template('burndown.html', prox="/planningpoker", ante="/dor-dod")
 
 @app.route('/planningpoker')
 def PP():
-    return render_template('planningpoker.html', href="/skills")
+    return render_template('planningpoker.html', prox="/skills", ante="/burndown")
 
 @app.route('/skills')
 def skills():
-    return render_template('shskills.html', href="/quemsomos")
+    return render_template('shskills.html', prox="/quemsomos", ante="/planningpoker")
 
 @app.route('/quemsomos')
 def quemsomos():
-    return render_template('quemsomos.html', href="/")
+    return render_template('quemsomos.html', prox="/")
 
 app.run(debug=True)
