@@ -342,10 +342,10 @@ hr{
 }
 
 .revisao > div{
-    width: 30rem;
+    width: 35rem;
     padding: 0.5rem;
     min-height: 1rem;
-    margin: auto;
+    margin: 1rem;
 }
 
 .revisao p,
