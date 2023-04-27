@@ -24,11 +24,8 @@ def sprintbacklog():
 
 @app.route('/mvp')
 def mvp():
-    return render_template('mvp.html', prox="/productincrement", ante="/sprintbacklog")
+    return render_template('mvp.html', prox="/po", ante="/sprintbacklog")
 
-@app.route('/productincrement')
-def PI():
-    return render_template('productincrement.html', prox="/po", ante="/mvp")
 
 @app.route('/po')
 def po():

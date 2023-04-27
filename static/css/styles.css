@@ -55,7 +55,7 @@ body{
 
 main h1{
     color: white;
-    background-color: #87bdc0;
+    background-color: #2c5487;
     border-bottom: #1E324C 5px solid;
     width: fit-content;
     margin: 0 auto;
@@ -228,7 +228,8 @@ hr{
 }
 
 .light-card{
-    background-color: #9acdcf;
+	background-color:#74a0da;
+
 }
 
 .light-card h3{
