@@ -268,7 +268,7 @@ hr{
     margin: 5vh auto;
 }
 
-.landing > h1{
+.landing > div > h1{
     font-size: 5rem;
     background: none;
     color: #063663;
