@@ -8,7 +8,7 @@ header {
     padding-right: 1rem;
     height: 5rem;
     width: 100%;
-    background: linear-gradient(180deg, #1E324C 0%, #374C67 100%);
+    background: #1E324C;
     box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
     align-items: center;
     justify-content: space-evenly;
@@ -35,15 +35,16 @@ header > div > h1{
 footer{
     display: flex;
     justify-content: center;
-    background: linear-gradient(180deg, #1E324C 0%, #374C67 100%);
+    background: #1E324C;
     color: white;
     font-family: 'Roboto', sans-serif;
     height: 4rem;
-    
 }
 
 footer > div{
     background-color: transparent; 
+    margin-top: 1em;
+    font-weight: bolder;
 }
 
 /* Fim Rodapé */
@@ -141,74 +142,6 @@ hr{
     width: 50%;
 }
 
-
-/* The sidepanel menu */
-.sidepanel {
-    height: 100%; /* Specify a height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    left: 0;
-    background: linear-gradient(360deg, #1E324C 0%, #374C67 100%); /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
-    
-    
-  }
- .sidepanel::-webkit-scrollbar{
-    width: 10px
-   
-   
-  }
-
-  .sidepanel::-webkit-scrollbar-thumb{
-    background-color: #88bef2
-  }
-  /* The sidepanel links */
-  .sidepanel a {
-    padding: 6px 8px 6px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #ffffff;
-    display: block;
-    transition: 0.3s;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font-family: roboto, sans-serif;
-   
-   
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidepanel a:hover:not(:first-child){
-    color: #f1f1f1;
-    background-color: #d8d8d852;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidepanel .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    
-  }
-  
-  /* Style the button that is used to open the sidepanel */
-  .openbtn {
-    font-size: 34px;
-    cursor: pointer;
-    background-color: transparent;
-    color: white;
-    height: 100%;
-    width: 5%;
-    border: none;
-    
-  }
-  
   .openbtn:hover {
     background-color: #44444452;
   }
@@ -340,3 +273,189 @@ hr{
     border: none;
     color: black;
 }
+
+/* Navbar */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none; 
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: #f2f2f2;
+}
+
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+nav .logo{
+    float: left;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 60px;
+    cursor: pointer;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+nav ul li{
+    /* float: left; */
+    display: inline-block;
+    background: #1E324C;
+    margin: 0;
+
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+nav ul li a:hover{
+    color: rgb(254, 254, 254);
+    border-radius: 5px;
+    box-shadow: 0 0 5px #f6fbfb, 0 0 5px #ffffff;
+                
+}
+nav ul ul li a:hover{
+    color: rgb(255, 255, 255);
+    box-shadow: none;
+
+}
+nav ul ul{
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid rgb(255, 255, 255);
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+nav ul ul ul{
+    border-top: none;
+}
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li{
+    position: relative;
+    margin: 0;
+    width: auto;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+    line-height: 50px;
+}
+nav ul ul ul li{
+    position: relative;
+    top: -60px;
+    left: 150px;
+}
+.show,.icon, input{
+    display: none;
+}
+.fa-plus{
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+@media all and (max-width: 968px){
+    nav ul{
+        margin-right: 0;
+        float: left;
+    }
+    nav .logo{
+        padding-left: 3em;
+        width: 100%;
+
+    }
+    nav ul li, nav ul ul li{
+        display: block;
+        width: 100%;
+    }
+    nav ul ul{
+        top: 70px;
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    nav ul ul ul li{
+        position: static;
+
+    }
+    nav ul ul li{
+        border-bottom: 0;
+    }
+    nav ul ul a{
+        padding-left: 40px;
+    }
+    nav ul ul ul a{
+        padding-left: 80px;
+    }
+    .show{
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+    .show:hover{
+        color: rgb(255, 255, 255);
+    }
+    .icon{
+        display: block;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav ul li a:hover{
+        box-shadow: none;
+    }
+    .show + a, ul{
+        display: none;
+    }
+    [id^=btn]:checked + ul{
+        display: block;
+    }
+}
+.content{
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+header{
+    font-size: 35px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+p{
+    font-size: 30px;
+    font-weight: 500;
+}
+/* Fim Navbar */
