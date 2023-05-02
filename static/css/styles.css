@@ -434,7 +434,7 @@ nav ul ul ul li{
     nav ul li a:hover{
         box-shadow: none;
     }
-    .show + a, ul{
+    .show + a, nav ul{
         display: none;
     }
     [id^=btn]:checked + ul{
