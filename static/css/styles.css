@@ -6,12 +6,12 @@ header {
     margin: 0px 0px 5vh;
     padding-left: 2rem;
     padding-right: 1rem;
-    height: 5rem;
+    height: auto;
     width: 100%;
     background: #1E324C;
     box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     position: sticky;
     top: 0;
     z-index: 3;
@@ -37,7 +37,7 @@ footer{
     justify-content: center;
     background: #1E324C;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 4rem;
 }
 
@@ -274,188 +274,3 @@ hr{
     color: black;
 }
 
-/* Navbar */
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  user-select: none; 
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-body{
-  background: #f2f2f2;
-}
-
-nav:after{
-  content: '';
-  clear: both;
-  display: table;
-}
-nav .logo{
-    float: left;
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 70px;
-    padding-left: 60px;
-    cursor: pointer;
-}
-
-nav ul{
-    float: right;
-    list-style: none;
-    margin-right: 40px;
-    position: relative;
-}
-nav ul li{
-    /* float: left; */
-    display: inline-block;
-    background: #1E324C;
-    margin: 0;
-
-}
-nav ul li a{
-    color: #fff;
-    text-decoration: none;
-    line-height: 70px;
-    font-size: 18px;
-    padding: 8px 15px;
-}
-nav ul li a:hover{
-    color: rgb(254, 254, 254);
-    border-radius: 5px;
-    box-shadow: 0 0 5px #f6fbfb, 0 0 5px #ffffff;
-                
-}
-nav ul ul li a:hover{
-    color: rgb(255, 255, 255);
-    box-shadow: none;
-
-}
-nav ul ul{
-    position: absolute;
-    top: 90px;
-    border-top: 3px solid rgb(255, 255, 255);
-    opacity: 0;
-    visibility: hidden;
-    transition: top .3s;
-}
-nav ul ul ul{
-    border-top: none;
-}
-nav ul li:hover > ul{
-    top: 70px;
-    opacity: 1;
-    visibility: visible;
-}
-nav ul ul li{
-    position: relative;
-    margin: 0;
-    width: auto;
-    float: none;
-    display: list-item;
-    border-bottom: 1px solid rgba(0,0,0,0.3);
-}
-nav ul ul li a{
-    line-height: 50px;
-}
-nav ul ul ul li{
-    position: relative;
-    top: -60px;
-    left: 150px;
-}
-.show,.icon, input{
-    display: none;
-}
-.fa-plus{
-    font-size: 15px;
-    margin-left: 40px;
-}
-
-@media all and (max-width: 968px){
-    nav ul{
-        margin-right: 0;
-        float: left;
-    }
-    nav .logo{
-        padding-left: 3em;
-        width: 100%;
-
-    }
-    nav ul li, nav ul ul li{
-        display: block;
-        width: 100%;
-    }
-    nav ul ul{
-        top: 70px;
-        position: static;
-        border-top: none;
-        float: none;
-        display: none;
-        opacity: 1;
-        visibility: visible;
-    }
-    nav ul ul ul li{
-        position: static;
-
-    }
-    nav ul ul li{
-        border-bottom: 0;
-    }
-    nav ul ul a{
-        padding-left: 40px;
-    }
-    nav ul ul ul a{
-        padding-left: 80px;
-    }
-    .show{
-        display: block;
-        color: white;
-        font-size: 18px;
-        padding: 0 20px;
-        line-height: 70px;
-        cursor: pointer;
-    }
-    .show:hover{
-        color: rgb(255, 255, 255);
-    }
-    .icon{
-        display: block;
-        color: #fff;
-        position: absolute;
-        top: 0;
-        right: 40px;
-        line-height: 70px;
-        font-size: 25px;
-        cursor: pointer;
-    }
-    nav ul li a:hover{
-        box-shadow: none;
-    }
-    .show + a, nav ul{
-        display: none;
-    }
-    [id^=btn]:checked + ul{
-        display: block;
-    }
-}
-.content{
-    z-index: -1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-header{
-    font-size: 35px;
-    font-weight: 600;
-    padding: 10px 0;
-}
-p{
-    font-size: 30px;
-    font-weight: 500;
-}
-/* Fim Navbar */
