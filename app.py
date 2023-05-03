@@ -29,7 +29,7 @@ def mvp():
 
 @app.route('/po')
 def po():
-    return render_template('po.html', prox="/sm", ante="/productincrement")
+    return render_template('po.html', prox="/sm", ante="/mvp")
 
 @app.route('/sm')
 def sm():
