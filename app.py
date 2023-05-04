@@ -8,15 +8,11 @@ def index():
 
 @app.route('/introducao')
 def introducao():
-    return render_template('introducao.html', prox="/importancia", ante="/")
-
-@app.route('/importancia')
-def imp():
-    return render_template('importancia.html', prox="/sprint", ante="/introducao")
+    return render_template('introducao.html', prox="/sprint", ante="/")
 
 @app.route('/sprint')
 def sprint():
-    return render_template('sprint.html', prox="/sprintbacklog", ante="/importancia")
+    return render_template('sprint.html', prox="/sprintbacklog", ante="/introducao")
 
 @app.route('/sprintbacklog')
 def sprintbacklog():
