@@ -148,6 +148,7 @@ hr{
 
 .dark-card{
     background-color: none;
+    border: 3px solid #1E324C;
     color: rgb(6, 6, 6);
 }
 
@@ -158,6 +159,10 @@ hr{
 
 .dark-card h3{
     font-weight: bold;
+}
+
+.light-card{
+    border: 3px solid #5981b6;
 }
 
 .light-card h3{
