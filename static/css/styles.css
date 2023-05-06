@@ -273,3 +273,7 @@ hr{
     color: black;
 }
 
+.card > .card-img-top{
+    width: 40%;
+    align-self: center;
+}
