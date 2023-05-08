@@ -46,9 +46,6 @@ Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia
 ## Metodologia Usada
 <img src="/API imagens/metodologia.png">
 
-## Product Backlog
-<img src="/API imagens/sprintbacklog.png">
-
 ## Sprint Backlog
 <img src="/API imagens/productbacklog.png">
 
