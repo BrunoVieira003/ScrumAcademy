@@ -5,6 +5,8 @@
 ![badge](https://img.shields.io/github/last-commit/ColossusAPI/ScrumAcademy)
 ![badge](https://img.shields.io/badge/status-em%20desenvolvimento-green)
 
+💻[Guia Passo a Passo de como rodar nosso projeto localmente em sua máquina](https://scribehow.com/embed/Guia_pratico_de_como_instalare_rodar_o_projeto_Scrum_Academy__peOlsyG_RvOFlGXtmMcn6Q)
+
 ## Introdução
 Scrum Academy é um projeto que busca disseminar o método Scrum de maneira fácil e acessível. No Scrum Academy, buscamos reunir todo o conteúdo de Scrum num só lugar e apresentar ao estudante interessado suas ferramentas, métodos, características e aplicações.
 
