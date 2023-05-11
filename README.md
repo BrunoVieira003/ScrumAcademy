@@ -17,7 +17,7 @@ Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia
 
 ## Tecnologias Utilizadas
 
-<img src="/API imagens/tecnologias2.png">
+<img src="/API imagens/tecnologias.png">
 
 ### Prototipação
 * Figma
@@ -39,7 +39,7 @@ Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia
 - KICK OFF: 13/02 a 03/03 - Finalizado
 - SPRINT 1: 13/03 a 02/04 - Finalizado
 - SPRINT 2: 03/04 a 23/04 - Finalizado
-- SPRINT 3: 24/04 a 14/05 
+- SPRINT 3: 24/04 a 14/05 - Finalizado
 - SPRINT 4: 15/05 a 04/06
 - FEIRA DE SOLUÇÕES: 13/06 e 14/06
 
@@ -49,7 +49,7 @@ Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia
 <img src="/API imagens/metodologia.png">
 
 ## Sprint Backlog
-<img src="/API imagens/productbacklog.png">
+<img src="/API imagens/backlog.png">
 
 ## Scrum Team
 ### 🎁 Product Owner (PO)
