@@ -43,7 +43,7 @@ Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia
 - SPRINT 4: 15/05 a 04/06
 - FEIRA DE SOLUÇÕES: 13/06 e 14/06
 
-<img src="/API imagens/cronograma.png">
+<img src="/API imagens/cronogramasprints.png">
 
 ## Metodologia Usada
 <img src="/API imagens/metodologia.png">
