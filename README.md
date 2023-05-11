@@ -31,9 +31,10 @@ Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia
 ### Desenvolvimento de Código
 * HTML
 * CSS
-* JavaScript
 ### Gerenciamento de rotas
 * Microframework Flask
+### Responsividade
+* Framework Bootstrap
 
 ## 📅 Cronograma das Sprints
 - KICK OFF: 13/02 a 03/03 - Finalizado
