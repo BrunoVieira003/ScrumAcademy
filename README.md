@@ -50,7 +50,7 @@ Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia
 <img src="/API imagens/metodologia.png">
 
 ## Sprint Backlog
-<img src="/API imagens/productbacklog.png">
+<img src="/API imagens/sprint.png">
 
 ## Scrum Team
 ### 🎁 Product Owner (PO)
