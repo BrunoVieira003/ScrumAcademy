@@ -5,6 +5,9 @@
 ![badge](https://img.shields.io/github/last-commit/ColossusAPI/ScrumAcademy)
 ![badge](https://img.shields.io/badge/status-em%20desenvolvimento-green)
 
+### Site em funcionamento
+<img src="/API imagens/sitevideo.gif">
+
 💻[Guia Passo a Passo de como rodar nosso projeto localmente em sua máquina](https://scribehow.com/embed/Guia_pratico_de_como_instalare_rodar_o_projeto_Scrum_Academy__peOlsyG_RvOFlGXtmMcn6Q)
 
 ## Introdução
