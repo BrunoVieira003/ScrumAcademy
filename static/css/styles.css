@@ -267,7 +267,7 @@ hr{
     color: black;
 }
 
-.card > .card-img-top{
+.card > .link-image{
     width: 40%;
     align-self: center;
 }
