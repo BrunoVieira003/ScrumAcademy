@@ -55,12 +55,8 @@ def PP():
 def skills():
     return render_template('shskills.html', prox="/links", ante="/planningpoker")
 
-@app.route('/quemsomos')
-def quemsomos():
-    return render_template('quemsomos.html', prox="/")
-
 @app.route('/links')
 def links():
-    return render_template('links.html', prox="/quemsomos", ante="/skills")
+    return render_template('links.html', prox="/", ante="/skills")
 
 app.run(debug=True)

@@ -68,10 +68,6 @@
           <a class="nav-link" href="/links">Links</a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="/quemsomos">Quem Somos</a>
-        </li>
-
       </ul>
     </div>
   </nav>
@@ -89,12 +85,26 @@
         {% endblock %}
     </main>
     
-    <footer> 
-            
-        <div>
-            <h5>Todos os direitos reservados</h5>
-        </div>
-
+    <footer class="row row-cols-lg-2 row-cols-sm-auto w-100 d-flex justify-content-center">
+      <div class="d-flex flex-column align-items-center my-4 w-25">
+        <h3 class="text-center mb-3">Saiba mais</h3>
+        <ul class="list-group list-group-flush footer-link">
+          <li class="list-group-item">
+            <a href="/sprint">Eventos do Scrum</a>
+          </li>
+          <li class="list-group-item">
+            <a href="/skills">Soft Skills</a>
+          </li>
+          <li class="list-group-item">
+            <a href="/links">Materiais adicionais</a>
+          </li>
+        </ul>
+      </div> 
+      <div class="d-flex flex-column my-4 w-25">
+        <h3 class="text-center">Conheça mais sobre nosso projeto!</h3>
+        <img class="qr-code" src="../static/imagens/footer/github-qrcode.png" alt="">
+      </div> 
+        
     </footer>
 
 </body>

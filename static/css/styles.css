@@ -33,12 +33,9 @@ header > div > h1{
 }
 
 footer{
-    display: flex;
-    justify-content: center;
     background: #1E324C;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    height: 4rem;
 }
 
 footer > div{
@@ -270,4 +267,22 @@ hr{
 .card > .link-image{
     width: 40%;
     align-self: center;
+}
+
+.qr-code{
+    width: 45%;
+}
+
+.footer-link li{
+    background-color: transparent;
+}
+
+.footer-link a{
+    color: white;
+    font-weight: lighter;
+    text-decoration: none
+}
+
+.footer-link a:hover{
+    text-decoration: underline;
 }
