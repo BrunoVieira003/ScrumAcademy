@@ -1,24 +1,28 @@
 {% extends "base.html"%}
 {% block title %}Scrum Academy{% endblock %} 
 {%block content%}
-<section class="landing">
+<section class="landing min-vh-50 align-self-center mb-5">
 
-   <div class="container-lg">
-      <h1>Scrum: O Método Ágil</h1>
-   </div>
-   <h2>Descubra o poder da organização com o Scrum Academy!</h2>
-
+   
    <div class="row row-cols-lg-2 mt-5">
-      <div>
-          <img src="../static/imagens/home_img/landing_illustration.svg" alt="">
+      <div class="landing-text d-flex flex-column mb-5">
+         <div class="container-lg">
+            <h1>Scrum: O Método Ágil</h1>
+         </div>
+         <h2>Descubra o poder da organização com o Scrum Academy!</h2>
+         <a class="myButton btn align-self-center d-none d-lg-block w-50" href="{{prox}}">Comece agora!</a> <!-- Botão quando a tela está grande (>= large) -->
       </div>
-      <div>
-         <h3>O treinamento definitivo para aplicar a metodologia ágil mais eficiente do mercado!</h3>
-         <p>Aprenda como trabalhar em equipe de forma mais produtiva e entregue resultados surpreendentes em tempo recorde! Não perca mais tempo e se junte à revolução ágil com o Scrum Academy!</p>
-         <a class="myButton btn" href="{{prox}}">Começar</a>
-      </div>
+      
+      <img class="rounded float-end" src="../static/imagens/home_img/landing_illustration.svg" alt="">
+      <a class="myButton btn d-block d-lg-none w-75" href="{{prox}}">Comece agora!</a> <!-- Botão quando a tela está pequena ou média (< large) -->
+      
    </div>
+   
+</section>
 
+<section class="container mb-8">
+   <h3>O treinamento definitivo para aplicar a metodologia ágil mais eficiente do mercado!</h3>
+   <p>Aprenda como trabalhar em equipe de forma mais produtiva e entregue resultados surpreendentes em tempo recorde! Não perca mais tempo e se junte à revolução ágil com o Scrum Academy!</p>
 </section>
 
 <section class="container">

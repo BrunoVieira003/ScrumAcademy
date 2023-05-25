@@ -181,7 +181,6 @@ hr{
 	font-weight:bold;
 	padding:16px 50px;
 	text-decoration:none;
-	text-shadow:2px 2px 2px #283966;
     transition: transform .3s;
 }
 .myButton:hover {
@@ -196,13 +195,19 @@ hr{
 	top:2px;
 }
 
-.landing{
-    display: flex;
-    flex-direction: column;
-    margin: 5vh auto;
+.landing .myButton{
+    background-color: #327ec3;
+    border-color: transparent;
 }
 
-.landing > div > h1{
+.landing .myButton:hover{
+    background-color: transparent;
+    border-color: #327ec3;
+    color: #327ec3;
+    transform: scale(1.1);
+}
+
+.landing-text h1{
     font-size: 5rem;
     background: none;
     color: #063663;
@@ -210,7 +215,7 @@ hr{
     border: none;
 }
 
-.landing > h2{
+.landing-text h2{
     margin: 0 auto;
     color: #084c8c;
     font-style: italic;
@@ -227,18 +232,6 @@ hr{
     justify-content: stretch;
     align-items: stretch;
     margin: 0 auto;
-}
-
-.landing-image > img{
-    width: 45%;
-}
-
-.landing-image > div{
-    margin: 5%;
-}
-
-.landing-image p{
-    margin: 10% 0;
 }
 
 .image-text{
@@ -260,7 +253,6 @@ hr{
 }
 
 .dod{
-   
     font-size: 3.6rem;
     background: none;
     color: #063663;
