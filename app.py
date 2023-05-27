@@ -56,7 +56,12 @@ def skills():
     return render_template('shskills.html', prox="/materiaisextras", ante="/planningpoker")
 
 @app.route('/materiaisextras')
-def links():
+def materiaisextras():
     return render_template('materiaisextras.html', prox="/", ante="/skills")
+
+@app.route('/audios')
+def audios():
+    return render_template('audios.html', ante="/")
+
 
 app.run(debug=True)
