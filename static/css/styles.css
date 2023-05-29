@@ -286,3 +286,8 @@ hr{
 .footer-link a:hover{
     text-decoration: underline;
 }
+
+.img-sm{
+    display: flex;
+    align-items: center;
+}
