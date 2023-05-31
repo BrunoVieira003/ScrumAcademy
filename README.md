@@ -38,6 +38,8 @@ Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia
 * Microframework Flask
 ### Responsividade
 * Framework Bootstrap
+### Servidor WEB
+* Amazon Web Services (AWS)
 
 ## 📅 Cronograma das Sprints
 - KICK OFF: 13/02 a 03/03 - Finalizado
