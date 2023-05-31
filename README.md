@@ -20,7 +20,7 @@ Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia
 
 ## Tecnologias Utilizadas
 
-<img src="/API imagens/tecnologias.png">
+<img src="/API imagens/tech.png">
 
 ### Prototipação
 * Figma
