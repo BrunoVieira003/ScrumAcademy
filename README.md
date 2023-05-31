@@ -20,7 +20,7 @@ Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia
 
 ## Tecnologias Utilizadas
 
-<img src="/API imagens/tecnologias.png">
+<img src="/API imagens/tech.png">
 
 ### Prototipação
 * Figma
@@ -38,22 +38,24 @@ Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia
 * Microframework Flask
 ### Responsividade
 * Framework Bootstrap
+### Servidor WEB
+* Amazon Web Services (AWS)
 
 ## 📅 Cronograma das Sprints
 - KICK OFF: 13/02 a 03/03 - Finalizado
 - SPRINT 1: 13/03 a 02/04 - Finalizado
 - SPRINT 2: 03/04 a 23/04 - Finalizado
 - SPRINT 3: 24/04 a 14/05 - Finalizado
-- SPRINT 4: 15/05 a 04/06
+- SPRINT 4: 15/05 a 04/06 - Finalizado
 - FEIRA DE SOLUÇÕES: 13/06 e 14/06
 
-<img src="/API imagens/cronogramasprints.png">
+<img src="/API imagens/cronograma.png">
 
 ## Metodologia Usada
 <img src="/API imagens/metodologia.png">
 
 ## Sprint Backlog
-<img src="/API imagens/sprint.png">
+<img src="/API imagens/sprintbacklog.png">
 
 ## Scrum Team
 ### 🎁 Product Owner (PO)

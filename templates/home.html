@@ -6,19 +6,25 @@
    
    <div class="row row-cols-lg-2 mt-5">
       <div class="landing-text d-flex flex-column mb-5">
-         <div class="container-lg d-flex">
-            <h1>Método Ágil Scrum</h1>
+         <div class="container-lg d-flex px-0">
+            <h1 class="fs-1">Método Ágil Scrum</h1>
          </div>
+
          <div class="container-lg d-flex">
             <h4>Escolha uma opção para acessar o conteúdo do site:</h4>
          </div>
-         <a class="myButton btn align-self-center d-none d-lg-block w-50" href="{{prox}}">Textos e Vídeos</a> <!-- Botão quando a tela está grande (>= large) -->
-         <a class="myButton btn align-self-center d-none d-lg-block w-50" href="/audios">Audiobooks</a> <!-- Botão quando a tela está grande (>= large) -->
+
+         <div class="h-25 d-inline-block">
+            <a class="myButton btn align-self-center d-none d-lg-block w-50" href="{{prox}}">Textos e Vídeos</a> <!-- Botão quando a tela está grande (>= large) -->
+            <a class="myButton btn align-self-center d-none d-lg-block w-50" href="/audios">Audiobooks</a> <!-- Botão quando a tela está grande (>= large) -->
+         </div>
       </div>
       
       <img class="rounded float-end" src="../static/imagens/home_img/landing_illustration.svg" alt="">
-      <a class="myButton btn d-block d-lg-none w-75" href="{{prox}}">Textos e Vídeos</a> <!-- Botão quando a tela está pequena ou média (< large) -->
-      <a class="myButton btn d-block d-lg-none w-75" href="/audios">Audiobooks</a> <!-- Botão quando a tela está pequena ou média (< large) -->
+      <div class="h-25 d-inline-block">
+         <a class="myButton btn d-block d-lg-none w-75" href="{{prox}}">Textos e Vídeos</a> <!-- Botão quando a tela está pequena ou média (< large) -->
+         <a class="myButton btn d-block d-lg-none w-75" href="/audios">Audiobooks</a> <!-- Botão quando a tela está pequena ou média (< large) -->
+      </div>
    </div>
    
 </section>
