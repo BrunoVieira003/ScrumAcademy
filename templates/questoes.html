@@ -1,0 +1,30 @@
+{% extends "base.html"%}
+{% block title %}Questões{% endblock %}
+{%block content%}
+
+
+<form method="post" action="/questoes">
+
+    <input type="radio" id='q1a' name='q1' value='A' required>
+    <label for="q1a">A</label><br>
+
+    <input type="radio" id='q1b' name='q1' value='B' required>
+    <label for="q1b">B</label><br>
+
+    <input type="radio" id='q1c' name='q1' value='C' required>
+    <label for="q1c">C</label><br>
+
+    <input type="radio" id='q1d' name='q1' value='D' required>
+    <label for="q1d">D</label><br>
+
+    <button input type="submit">Enviar</button>
+
+</form>
+
+{% if q1 %}
+
+<p>CORRETO!!!</p>
+
+{% endif %}
+
+{% endblock %}

@@ -1,4 +1,4 @@
-from flask import Flask, render_template 
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -62,6 +62,13 @@ def materiaisextras():
 @app.route('/audios')
 def audios():
     return render_template('audios.html', ante="/")
+
+@app.route('/questoes', methods=['GET', 'POST'])
+def questoes():
+    if request.method == 'POST':
+        if request.form['q1'] == 'B':
+            return render_template('questoes.html', ante="/", q1 = True)
+    return render_template('questoes.html', ante="/")
 
 
 app.run(debug=True)
