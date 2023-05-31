@@ -2,29 +2,59 @@
 {% block title %}Questões{% endblock %}
 {%block content%}
 
+<h1>Questões</h1>
+
+{% if enviado %}
+
+<h2>Número de Acertos:</h2><br>
+<p>{{score}}/{{x}}</p><br>
+<h2>Porcentagem de Acertos:</h2><br>
+<p>{{scorep}}%</p>
+<br>
+<p>Respostas:</p><br>
+
+<p>
+{% for r in resp %}
+{{r}} 
+{% endfor %}
+</p>
+
+<p>Gabarito:</p><br>
+<p>
+{% for r in gab %}
+{{r}} 
+{% endfor %}
+</p>
+<br>
+<br>
+
+{% endif %}
 
 <form method="post" action="/questoes">
+{% for i in range(0,x) %}
 
-    <input type="radio" id='q1a' name='q1' value='A' required>
-    <label for="q1a">A</label><br>
+    <h2>{{i+1}}. {{q[i]}}</h2>
 
-    <input type="radio" id='q1b' name='q1' value='B' required>
-    <label for="q1b">B</label><br>
+    <input type="radio" width="2rem" height="2rem" id='a' name='q{{i}}' value='A' required>
+    <label for="a"><p>A. {{alt[i][0]}}</p></label><br>
 
-    <input type="radio" id='q1c' name='q1' value='C' required>
-    <label for="q1c">C</label><br>
+    <input type="radio" id='b' name='q{{i}}' value='B' required>
+    <label for="b"><p>B. {{alt[i][1]}}</p></label><br>
 
-    <input type="radio" id='q1d' name='q1' value='D' required>
-    <label for="q1d">D</label><br>
+    <input type="radio" id='c' name='q{{i}}' value='C' required>
+    <label for="c"><p>C. {{alt[i][2]}}</p></label><br>
 
-    <button input type="submit">Enviar</button>
+    <input type="radio" id='d' name='q{{i}}' value='D' required>
+    <label for="d"><p>D. {{alt[i][3]}}</p></label><br>
+
+{% endfor %}
+
+    <button input type="submit" class="btn btn-primary">Enviar</button>
 
 </form>
 
-{% if q1 %}
-
-<p>CORRETO!!!</p>
-
-{% endif %}
+<br>
+<br>
+<br>
 
 {% endblock %}
