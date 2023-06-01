@@ -6,28 +6,41 @@
 
 {% if enviado %}
 
-<h2>Número de Acertos:</h2><br>
-<p>{{score}}/{{x}}</p><br>
-<h2>Porcentagem de Acertos:</h2><br>
-<p>{{scorep}}%</p>
-<br>
-<p>Respostas:</p><br>
+<h2>Número de Acertos:</h2>
+{{score}}/{{x}}
+<h2>Porcentagem de Acertos:</h2>
+{{scorep}}%
 
+Respostas:
+
+
+<<<<<<< HEAD
 <p>
 {% for i in range(0,x) %}
 <span style='color: {{c[i]}}'>{{i+1}}. </span> 
 <span style='color: {{c[i]}}'>{{r[i]}} |</span> 
+=======
+{% for r in resp %}
+{{r}} 
+>>>>>>> 370359e87d3798a26892ac700fe2dc3d1e2bdca2
 {% endfor %}
-</p>
 
+<<<<<<< HEAD
 <p>Gabarito:</p><br>
 <p>
 {% for i in range(0,x) %}
 {{i+1}}. {{gab[i]}} | 
+=======
+
+Gabarito:
+
+{% for r in gab %}
+{{r}} 
+>>>>>>> 370359e87d3798a26892ac700fe2dc3d1e2bdca2
 {% endfor %}
-</p>
-<br>
-<br>
+
+
+
 
 {% endif %}
 
@@ -36,17 +49,25 @@
 
     <h2>{{i+1}}. {{q[i]}}</h2>
 
-    <input type="radio" width="2rem" height="2rem" id='a' name='q{{i}}' value='A' required>
-    <label for="a"><p>A. {{alt[i][0]}}</p></label><br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" width="2rem" height="2rem" id='A{{i}}' name='q{{i}}' value='A' required>
+        <label class="form-check-label" for="A{{i}}">A. {{alt[i][0]}}</label>
+    </div>
 
-    <input type="radio" id='b' name='q{{i}}' value='B' required>
-    <label for="b"><p>B. {{alt[i][1]}}</p></label><br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" id='B{{i}}' name='q{{i}}' value='B' required>
+        <label class="form-check-label" for="B{{i}}">B. {{alt[i][1]}}</label>
+    </div>
 
-    <input type="radio" id='c' name='q{{i}}' value='C' required>
-    <label for="c"><p>C. {{alt[i][2]}}</p></label><br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" id='C{{i}}' name='q{{i}}' value='C' required>
+        <label class="form-check-label" for="C{{i}}">C. {{alt[i][2]}}</label>
+    </div>
 
-    <input type="radio" id='d' name='q{{i}}' value='D' required>
-    <label for="d"><p>D. {{alt[i][3]}}</p></label><br>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" id='D{{i}}' name='q{{i}}' value='D' required>
+        <label class="form-check-label" for="D{{i}}">D. {{alt[i][3]}}</label>
+    </div>
 
 {% endfor %}
 
@@ -54,8 +75,8 @@
 
 </form>
 
-<br>
-<br>
-<br>
+
+
+
 
 {% endblock %}
