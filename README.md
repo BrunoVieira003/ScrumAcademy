@@ -10,15 +10,15 @@
 
 💻[Guia Passo a Passo de como rodar nosso projeto localmente em sua máquina](https://scribehow.com/embed/Guia_pratico_de_como_instalare_rodar_o_projeto_Scrum_Academy__peOlsyG_RvOFlGXtmMcn6Q)
 
-## Introdução
+## 💡 Introdução
 Scrum Academy é um projeto que busca disseminar o método Scrum de maneira fácil e acessível. No Scrum Academy, buscamos reunir todo o conteúdo de Scrum num só lugar e apresentar ao estudante interessado suas ferramentas, métodos, características e aplicações.
 
 Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia aprenda desde as ferramentas básicas até dicas de como aprimorar suas habilidades pessoais no dia a dia do trabalho.
 
-## Projeto
+## 📦 Projeto
 <img src="/API imagens/objetivo.png">
 
-## Tecnologias Utilizadas
+## 🧰 Tecnologias Utilizadas
 
 <img src="/API imagens/tech.png">
 
@@ -51,10 +51,10 @@ Nosso site permite que qualquer pessoa com ou sem experiência com a metodologia
 
 <img src="/API imagens/cronograma.png">
 
-## Metodologia Usada
+## ⚙️ Metodologia Usada
 <img src="/API imagens/metodologia.png">
 
-## Sprint Backlog
+## 📋 Sprint Backlog
 <img src="/API imagens/sprintbacklog.png">
 
 ## Scrum Team
