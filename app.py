@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from q import *
+import random
 
 app = Flask(__name__)
 
@@ -69,19 +70,33 @@ def questoes():
     global Q      #questoes do aqrquivo q.py
     global alt    #alternativas do aqrquivo q.py
     global gab    #gabarito do aqrquivo q.py
+
+    newQ = []
+    newalt = []
+    newgab = []
+
+    for i in random.sample(range(0,45), 15):    #pega questões aleatorias
+        newQ.append(Q[i])
+        newalt.append(alt[i])
+        newgab.append(gab[i])
+
     score = 0
+
     if request.method == 'POST':
         resp=[] #respostas
         cor=[] #color das corretas
-        for i in range(0,len(Q)):   #Checa cada alternativa e compara com gabarito
+
+        for i in range(0,len(newQ)):   #Checa cada alternativa e compara com gabarito
             resp.append(request.form[f'q{i}'])
-            if request.form[f'q{i}'] == gab[i]:
+            if request.form[f'q{i}'] == newgab[i]:
                 score += 1   
                 cor.append('green') 
             else:
                 cor.append('red')
-        scorep = score/len(Q)*100   #porcentagem de acertos
-        return render_template('questoes.html', q = Q, alt = alt, x = len(Q), score = score, scorep = int(scorep), enviado = True, gab = gab, resp = resp, c=cor, r=resp)
-    return render_template('questoes.html', q = Q, alt = alt, x = len(Q), enviado = False, gab = gab)
+        scorep = score/len(newQ)*100   #porcentagem de acertos
+
+        return render_template('questoes.html', q = newQ, alt = newalt, x = len(newQ), score = score, scorep = int(scorep), enviado = True, gab = newgab, resp = resp, c=cor, r=resp)
+    
+    return render_template('questoes.html', q = newQ, alt = newalt, x = len(newQ), enviado = False, gab = newgab)
 
 app.run(debug=True)

@@ -14,33 +14,18 @@
 Respostas:
 
 
-<<<<<<< HEAD
 <p>
 {% for i in range(0,x) %}
 <span style='color: {{c[i]}}'>{{i+1}}. </span> 
 <span style='color: {{c[i]}}'>{{r[i]}} |</span> 
-=======
-{% for r in resp %}
-{{r}} 
->>>>>>> 370359e87d3798a26892ac700fe2dc3d1e2bdca2
 {% endfor %}
 
-<<<<<<< HEAD
 <p>Gabarito:</p><br>
 <p>
 {% for i in range(0,x) %}
 {{i+1}}. {{gab[i]}} | 
-=======
-
-Gabarito:
-
-{% for r in gab %}
-{{r}} 
->>>>>>> 370359e87d3798a26892ac700fe2dc3d1e2bdca2
 {% endfor %}
-
-
-
+</p>
 
 {% endif %}
 
