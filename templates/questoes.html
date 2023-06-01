@@ -14,15 +14,16 @@
 <p>Respostas:</p><br>
 
 <p>
-{% for r in resp %}
-{{r}} 
+{% for i in range(0,x) %}
+<span style='color: {{c[i]}}'>{{i+1}}. </span> 
+<span style='color: {{c[i]}}'>{{r[i]}} |</span> 
 {% endfor %}
 </p>
 
 <p>Gabarito:</p><br>
 <p>
-{% for r in gab %}
-{{r}} 
+{% for i in range(0,x) %}
+{{i+1}}. {{gab[i]}} | 
 {% endfor %}
 </p>
 <br>

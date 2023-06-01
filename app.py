@@ -66,18 +66,22 @@ def audios():
 
 @app.route('/questoes', methods=['GET', 'POST'])
 def questoes():
-    global Q
-    global alt
-    global gab
+    global Q      #questoes do aqrquivo q.py
+    global alt    #alternativas do aqrquivo q.py
+    global gab    #gabarito do aqrquivo q.py
     score = 0
     if request.method == 'POST':
         resp=[] #respostas
+        cor=[] #color das corretas
         for i in range(0,len(Q)):   #Checa cada alternativa e compara com gabarito
             resp.append(request.form[f'q{i}'])
             if request.form[f'q{i}'] == gab[i]:
-                score += 1    
+                score += 1   
+                cor.append('green') 
+            else:
+                cor.append('red')
         scorep = score/len(Q)*100   #porcentagem de acertos
-        return render_template('questoes.html', q = Q, alt = alt, x = len(Q), score = score, scorep = int(scorep), enviado = True, gab = gab, resp = resp)
+        return render_template('questoes.html', q = Q, alt = alt, x = len(Q), score = score, scorep = int(scorep), enviado = True, gab = gab, resp = resp, c=cor, r=resp)
     return render_template('questoes.html', q = Q, alt = alt, x = len(Q), enviado = False, gab = gab)
 
 app.run(debug=True)
