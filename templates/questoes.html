@@ -12,10 +12,16 @@
     <tr>
         <th>Nº de acertos</th>
         <th>Porcentagem de acertos</th>
+        <th>Status</th>
     </tr>
     <tr>
         <td>{{ score }} / {{ x }}</td>
         <td>{{scorep}}%</td>
+        {% if scorep >= 70 %}
+            <td style="background-color: lightgreen">Aprovado</td>
+        {% else %}
+            <td style="background-color: pink">Reprovado</td>
+        {% endif %}
     </tr>
 </table>
 
@@ -66,8 +72,12 @@
 {% endfor %}
 
     <input name='seed' type="hidden" value='{{ seed }}'>
-
-    <button input type="submit" class="btn btn-primary my-5">Enviar</button>
+    {% if not enviado %}
+        <button input type="submit" class="btn btn-primary my-5">Enviar</button>
+    {% else %}
+        <button disabled input type="submit" class="btn btn-primary my-5">Enviar</button>
+    {% endif %}
+    
 
 </form>
 
