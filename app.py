@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from q import *
+from bancoq import *
 import random
 
 app = Flask(__name__)
@@ -68,31 +68,31 @@ def audios():
 @app.route('/questoes', methods=['GET', 'POST'])
 def questoes():
 
-    def cy_list(lst, n):  #0 a -3  #move a lista de forma ciclica
+    def cy_list(lst, n):  #0 a -3  #move a lista de forma ciclica  #forma usada para 'randomizar' as alterativas
         return lst[n:] + lst[:n]
 
-    global Q      #questoes do aqrquivo q.py
-    global alt    #alternativas do aqrquivo q.py
-    global gab    #gabarito do aqrquivo q.py
+    global Q      #questoes do aqrquivo bancoq.py
+    global alt    #alternativas do aqrquivo bancoq.py
+    global gab    #gabarito do aqrquivo bancoq.py
 
     seed=[]     #seed das randomização de questoes
     seedalt=[]  #seed das randomização de alternativas
 
-    newQ = []
-    newalt = []
-    newgab = []
+    newQ = []        #questoes selecionadas
+    newalt = []      #alternativas das questoes selecionadas
+    newgab = []      #gabarito da questoes selecionadas
 
     score = 0
 
     if request.method == 'POST':
         resp=[] #respostas
         cor=[] #color das corretas
-        seed = request.form['seed']
-        seedalt = request.form['seedalt']
+        seed = request.form['seed']         #recolhe os numeros usados como base para a disposicoes das questoes pegadas da ultima vez
+        seedalt = request.form['seedalt']      #mesma coisa com as alternativas
 
 
-        seed = seed.strip('][').split(', ')
-        seedalt = seedalt.strip('][').split(', ')
+        seed = seed.strip('][').split(', ')          #trasforma as str devolvidas do forms em listas
+        seedalt = seedalt.strip('][').split(', ')    #trasforma as str devolvidas do forms em listas
 
 
         for i in seed:    #pega questões anteriores
@@ -118,11 +118,11 @@ def questoes():
                 cor.append('pink')
         scorep = score/len(newQ)*100   #porcentagem de acertos
 
-        """ for i in range(0,len(resp)):      #trasforma os numeros em letras (em progresso)
-            resp[i] = chr(resp[i]+65)
-            newgab[i] = chr(newgab[i]+65) """
+        for i in range(0,len(resp)):      #trasforma os numeros em letras
+            resp[i] = chr(int(resp[i])+65)
+            newgab[i] = chr(newgab[i]+65)
 
-        return render_template('questoes.html', q = newQ, alt = newalt, x = len(newQ), score = score, scorep = int(scorep), enviado = True, gab = newgab, resp = resp, c=cor, r=resp)
+        return render_template('questoes.html', q = newQ, alt = newalt, x = len(newQ), score = score, scorep = int(scorep), enviado = True, gab = newgab, c=cor, r=resp)
 
     for i in random.sample(range(0,45), 10):    #pega questões aleatorias
         newQ.append(Q[i])
