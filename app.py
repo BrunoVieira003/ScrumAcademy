@@ -67,6 +67,10 @@ def audios():
 
 @app.route('/questoes', methods=['GET', 'POST'])
 def questoes():
+
+    def cy_list(lst, n):  #0 a -3  #move a lista de forma ciclica
+        return lst[n:] + lst[:n]
+
     global Q      #questoes do aqrquivo q.py
     global alt    #alternativas do aqrquivo q.py
     global gab    #gabarito do aqrquivo q.py
@@ -110,6 +114,16 @@ def questoes():
         newalt.append(alt[i])
         newgab.append(gab[i])
         seed.append(i)
+
+    for i in range(0,len(newQ)):    #randomiza as alternativas
+        r = random.randint(-3,0)
+        newalt[i] = cy_list(newalt[i], r)
+        newgab[i] += (-r)
+        
+        if newgab[i] > 3:
+            newgab[i] -= 4
+        
+
     
     return render_template('questoes.html', q = newQ, alt = newalt, x = len(newQ), enviado = False, gab = newgab, seed = seed)
 
