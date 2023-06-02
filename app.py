@@ -75,7 +75,8 @@ def questoes():
     global alt    #alternativas do aqrquivo q.py
     global gab    #gabarito do aqrquivo q.py
 
-    seed=[]
+    seed=[]     #seed das randomização de questoes
+    seedalt=[]  #seed das randomização de alternativas
 
     newQ = []
     newalt = []
@@ -87,9 +88,11 @@ def questoes():
         resp=[] #respostas
         cor=[] #color das corretas
         seed = request.form['seed']
+        seedalt = request.form['seedalt']
 
 
         seed = seed.strip('][').split(', ')
+        seedalt = seedalt.strip('][').split(', ')
 
 
         for i in seed:    #pega questões anteriores
@@ -98,14 +101,26 @@ def questoes():
             newalt.append(alt[i])
             newgab.append(gab[i])
 
+        for i in range(0,len(newQ)):    #pega alternativas/gabarito anteriores
+            r = int(seedalt[i])
+            newalt[i] = cy_list(newalt[i], r)
+            newgab[i] += (-r)
+            
+            if newgab[i] > 3:
+                newgab[i] -= 4
+
         for i in range(0,len(newQ)):   #Checa cada alternativa e compara com gabarito
             resp.append(request.form[f'q{i}'])
-            if request.form[f'q{i}'] == newgab[i]:
+            if int(request.form[f'q{i}']) == newgab[i]:
                 score += 1   
                 cor.append('lightgreen') 
             else:
                 cor.append('pink')
         scorep = score/len(newQ)*100   #porcentagem de acertos
+
+        """ for i in range(0,len(resp)):      #trasforma os numeros em letras (em progresso)
+            resp[i] = chr(resp[i]+65)
+            newgab[i] = chr(newgab[i]+65) """
 
         return render_template('questoes.html', q = newQ, alt = newalt, x = len(newQ), score = score, scorep = int(scorep), enviado = True, gab = newgab, resp = resp, c=cor, r=resp)
 
@@ -119,12 +134,13 @@ def questoes():
         r = random.randint(-3,0)
         newalt[i] = cy_list(newalt[i], r)
         newgab[i] += (-r)
+        seedalt.append(r)
         
         if newgab[i] > 3:
             newgab[i] -= 4
         
 
     
-    return render_template('questoes.html', q = newQ, alt = newalt, x = len(newQ), enviado = False, gab = newgab, seed = seed)
+    return render_template('questoes.html', q = newQ, alt = newalt, x = len(newQ), enviado = False, gab = newgab, seed = seed, seedalt = seedalt)
 
 app.run(debug=True)
