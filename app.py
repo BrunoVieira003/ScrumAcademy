@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from q import *
+from bancoq import *
 import random
 
 app = Flask(__name__)
@@ -67,25 +67,32 @@ def audios():
 
 @app.route('/questoes', methods=['GET', 'POST'])
 def questoes():
-    global Q      #questoes do aqrquivo q.py
-    global alt    #alternativas do aqrquivo q.py
-    global gab    #gabarito do aqrquivo q.py
 
-    seed=[]
+    def cy_list(lst, n):  #0 a -3  #move a lista de forma ciclica  #forma usada para 'randomizar' as alterativas
+        return lst[n:] + lst[:n]
 
-    newQ = []
-    newalt = []
-    newgab = []
+    global Q      #questoes do aqrquivo bancoq.py
+    global alt    #alternativas do aqrquivo bancoq.py
+    global gab    #gabarito do aqrquivo bancoq.py
+
+    seed=[]     #seed das randomização de questoes
+    seedalt=[]  #seed das randomização de alternativas
+
+    newQ = []        #questoes selecionadas
+    newalt = []      #alternativas das questoes selecionadas
+    newgab = []      #gabarito da questoes selecionadas
 
     score = 0
 
     if request.method == 'POST':
         resp=[] #respostas
         cor=[] #color das corretas
-        seed = request.form['seed']
+        seed = request.form['seed']         #recolhe os numeros usados como base para a disposicoes das questoes pegadas da ultima vez
+        seedalt = request.form['seedalt']      #mesma coisa com as alternativas
 
 
-        seed = seed.strip('][').split(', ')
+        seed = seed.strip('][').split(', ')          #trasforma as str devolvidas do forms em listas
+        seedalt = seedalt.strip('][').split(', ')    #trasforma as str devolvidas do forms em listas
 
 
         for i in seed:    #pega questões anteriores
@@ -94,23 +101,46 @@ def questoes():
             newalt.append(alt[i])
             newgab.append(gab[i])
 
+        for i in range(0,len(newQ)):    #pega alternativas/gabarito anteriores
+            r = int(seedalt[i])
+            newalt[i] = cy_list(newalt[i], r)
+            newgab[i] += (-r)
+            
+            if newgab[i] > 3:
+                newgab[i] -= 4
+
         for i in range(0,len(newQ)):   #Checa cada alternativa e compara com gabarito
             resp.append(request.form[f'q{i}'])
-            if request.form[f'q{i}'] == newgab[i]:
+            if int(request.form[f'q{i}']) == newgab[i]:
                 score += 1   
                 cor.append('lightgreen') 
             else:
                 cor.append('pink')
         scorep = score/len(newQ)*100   #porcentagem de acertos
 
-        return render_template('questoes.html', q = newQ, alt = newalt, x = len(newQ), score = score, scorep = int(scorep), enviado = True, gab = newgab, resp = resp, c=cor, r=resp)
+        for i in range(0,len(resp)):      #trasforma os numeros em letras
+            resp[i] = chr(int(resp[i])+65)
+            newgab[i] = chr(newgab[i]+65)
+
+        return render_template('questoes.html', q = newQ, alt = newalt, x = len(newQ), score = score, scorep = int(scorep), enviado = True, gab = newgab, c=cor, r=resp)
 
     for i in random.sample(range(0,45), 10):    #pega questões aleatorias
         newQ.append(Q[i])
         newalt.append(alt[i])
         newgab.append(gab[i])
         seed.append(i)
+
+    for i in range(0,len(newQ)):    #randomiza as alternativas
+        r = random.randint(-3,0)
+        newalt[i] = cy_list(newalt[i], r)
+        newgab[i] += (-r)
+        seedalt.append(r)
+        
+        if newgab[i] > 3:
+            newgab[i] -= 4
+        
+
     
-    return render_template('questoes.html', q = newQ, alt = newalt, x = len(newQ), enviado = False, gab = newgab, seed = seed)
+    return render_template('questoes.html', q = newQ, alt = newalt, x = len(newQ), enviado = False, gab = newgab, seed = seed, seedalt = seedalt)
 
 app.run(debug=True)

@@ -270,4 +270,6 @@ alt = [['Um método ágil para gerenciamento de projetos.',
 'Flexibilidade.',
 'Pensamento analítico.']]
 
-gab = ['A', 'D', 'D', 'C', 'C', 'B', 'B', 'D', 'A', 'B', 'C', 'D', 'C', 'C', 'D', 'C', 'D', 'B', 'D', 'D', 'A', 'C', 'A', 'B', 'C', 'B', 'C', 'C', 'A', 'B', 'B', 'B', 'C', 'D', 'C', 'C', 'D', 'C', 'C', 'D', 'B', 'C', 'A', 'C', 'C ']
+gab = ['A', 'D', 'D', 'C', 'C', 'B', 'B', 'D', 'A', 'B', 'C', 'D', 'C', 'C', 'D', 'C', 'D', 'B', 'D', 'D', 'A', 'C', 'A', 'B', 'C', 'B', 'C', 'C', 'A', 'B', 'B', 'B', 'C', 'D', 'C', 'C', 'D', 'C', 'C', 'D', 'B', 'C', 'A', 'C', 'C']
+
+gab = [ord(x)-65 for x in gab]  #transforma na posição da alternativa certa (0,1,2,3)
