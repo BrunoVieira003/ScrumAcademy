@@ -44,29 +44,48 @@
 
 {% endif %}
 
+{% macro alternativa_cor(alt, r, g) %}
+    {% if alt == g %}
+        green
+    {% elif alt == r%}
+        red
+    {% else %}
+        
+    {% endif %}
+{% endmacro %}
+
+{% macro respondido(enviado, alt, r) %}
+    {%if enviado%}
+        disabled
+        {% if alt == r %}
+            checked
+        {%endif%}
+    {% endif %}
+{% endmacro %}
+
 <form method="post" action="/questoes">
 {% for i in range(0,x) %}
 
     <h2>{{i+1}}. {{q[i]}}</h2>
 
     <div class="form-check">
-        <input class="form-check-input fs-5" type="radio" width="2rem" height="2rem" id='A{{i}}' name='q{{i}}' value='0' required>
-        <label class="form-check-label fs-5" for="A{{i}}">A. {{alt[i][0]}}</label>
+        <input class="form-check-input fs-5" type="radio" width="2rem" height="2rem" id='A{{i}}' name='q{{i}}' value='0' required {{ respondido(enviado, 'A', r[i])}}>
+        <label style="color: {{ alternativa_cor('A', r[i], gab[i]) }}" class="form-check-label fs-5" for="A{{i}}">A. {{alt[i][0]}}</label>
     </div>
 
     <div class="form-check">
-        <input class="form-check-input fs-5" type="radio" id='B{{i}}' name='q{{i}}' value='1' required>
-        <label class="form-check-label fs-5" for="B{{i}}">B. {{alt[i][1]}}</label>
+        <input class="form-check-input fs-5" type="radio" id='B{{i}}' name='q{{i}}' value='1' required {{ respondido(enviado, 'B', r[i])}}>
+        <label style="color: {{ alternativa_cor('B', r[i], gab[i]) }}" class="form-check-label fs-5" for="B{{i}}">B. {{alt[i][1]}}</label>
     </div>
 
     <div class="form-check">
-        <input class="form-check-input fs-5" type="radio" id='C{{i}}' name='q{{i}}' value='2' required>
-        <label class="form-check-label fs-5" for="C{{i}}">C. {{alt[i][2]}}</label>
+        <input class="form-check-input fs-5" type="radio" id='C{{i}}' name='q{{i}}' value='2' required {{ respondido(enviado, 'C', r[i])}}>
+        <label style="color: {{ alternativa_cor('C', r[i], gab[i]) }}" class="form-check-label fs-5" for="C{{i}}">C. {{alt[i][2]}}</label>
     </div>
 
     <div class="form-check">
-        <input class="form-check-input fs-5" type="radio" id='D{{i}}' name='q{{i}}' value='3' required>
-        <label class="form-check-label fs-5" for="D{{i}}">D. {{alt[i][3]}}</label>
+        <input class="form-check-input fs-5" type="radio" id='D{{i}}' name='q{{i}}' value='3' required {{ respondido(enviado, 'D', r[i])}}>
+        <label style="color: {{ alternativa_cor('D', r[i], gab[i]) }}" class="form-check-label fs-5" for="D{{i}}">D. {{alt[i][3]}}</label>
     </div>
 
 {% endfor %}

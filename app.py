@@ -141,6 +141,6 @@ def questoes():
         
 
     
-    return render_template('questoes.html', q = newQ, alt = newalt, x = len(newQ), enviado = False, gab = newgab, seed = seed, seedalt = seedalt)
+    return render_template('questoes.html', q = newQ, alt = newalt, x = len(newQ), enviado = False, gab = newgab, seed = seed, seedalt = seedalt, r=[], c=[])
 
 app.run(debug=True)
