@@ -3,7 +3,7 @@
 
 ![badge](https://img.shields.io/github/license/ColossusAPI/ScrumAcademy)
 ![badge](https://img.shields.io/github/last-commit/ColossusAPI/ScrumAcademy)
-![badge](https://img.shields.io/badge/status-em%20desenvolvimento-green)
+![badge](https://img.shields.io/badge/status-finalizado-blue)
 
 ### Site em funcionamento
 <img src="/API imagens/videoapi.gif">
